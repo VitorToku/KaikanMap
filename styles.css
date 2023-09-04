@@ -1,0 +1,42 @@
+.topo-do-site{    
+    margin:0;
+    border:0;
+    padding: 0;
+}
+html{
+    border:0;
+    padding:0;
+    margin:0;
+}
+.logo{
+    background-color:aquamarine;
+    height: 50px;
+    width: 99vw;
+    border:0;
+    padding:0;
+    margin:0;
+    display:inline;
+    
+}
+.logo p{
+    display:inline;
+    vertical-align: center;
+}
+
+.logotipo{
+    display:inline;
+    width: 1vi;
+    height: 1vi;
+    min-height: 40px;
+    text-align: center;
+    
+}
+.dropdown{
+    display:inline;
+}
+.dropdown ul{
+    display:inline;
+}
+.dropdown ul li{
+    display:inline;
+}
