@@ -1,33 +1,4 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
-}
 
-header, aside, main, #sec1,  footer{
-    background-color: #DCE6EA;
-    padding: 10px;
-}
-
-.containe{
-    display: grid;
-    gap: 12px;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 0.3px, 2fr, 2fr, 1.6fr;
-    grid-template-areas: "h h "
-                         "a m"
-                         "s1 s1 "
-                         "f f ";
-}
-
-header{grid-area: h;
-padding: 1px;
-}
-aside{grid-area: a;}
-main{grid-area: m;}
-#sec1{grid-area: s1;}
-
-
-footer{grid-area: f;}
 
 .minhacor{
     background-color: #DCE6EA;
@@ -98,54 +69,49 @@ footer{grid-area: f;}
  
   aside{
     background-color: white;
-    padding-bottom: 400px;
+    padding-bottom: 5rem;    
+
   }
 
   main{
-margin: 38px;
-margin-left: 250px;
-width: 733px;
-height: 645px;
-background-color: white;
-
-
+    background-color: white;
+    margin: 0;
   }
 
-/* .teste{
- border: 1px solid black;
-} */
-  
-
-  #sec1 img{
-    width: 263px;
-    height: 182px;
-    padding-left: 10px;
-    align-self: center;
-
-
-  }
-
+main #carrosel{
+  justify-self: center;
+}
   #sec1{
-    display: flex;
-    padding-top: 44px;
-    padding-left: 30px; 
-    padding-bottom: 53px; 
-    gap: 40px;  
+    display:grid;
+    gap: 1rem;
+    grid-template-columns: 0.4fr, 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "i d";
+    
+
   }
+
+  #sec1 #img{
+    grid-area:i;
+   }
+ 
+   #sec1 .divisao{
+     grid-area: d;
+   }
 
   #sec1 .words{
-    width: 1011px;
-    height: 350px;
-    margin-right: 100px;
+    width: 1011;
+    height: auto;
+    margin-right: 100;
     align-self: flex-start;
-    padding-right: 11px;
-    margin-left: 52px;
+    padding-right: 11;
+    margin-left: 52;
 
     
   }
 
   #sec1 .words p{
-    font-size: 22px;
+    font-size: 1.1rem;
   }
 
   #KAIKAN2{
@@ -153,7 +119,8 @@ background-color: white;
     color: #003785;
     margin-left: 13px
   }
-
+ 
+  
   
   
   .fst-hr{
@@ -195,6 +162,82 @@ background-color: white;
 }
  
 
+@media (max-width:768px){
+  .containe{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                    "a"
+                    "m "
+                    "s1 "
+                ;
+         
+  }
+
+  aside{
+    background-color: white;
+    padding-bottom: 6rem;    
+
+  }
+
+ main{
+  width: 100%;
+ }
+
+ main #carrosel{
+  width: 90%;
+  margin: 0 auto;
   
+}
+
+
+ 
+
+ #sec1{
+  display:grid;
+  gap: 1rem; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr, 1fr;
+  grid-template-areas: "i"
+                       "d";
+  
+
+}
+
+
+
+
+  #sec1{
+    width: auto;
+  }
+
+#sec1 #img{
+  
+  
+}
+
+#sec1 #img img{
+  width: 50%;
+  height: auto;
+  
+}
+
+#sec1 .divisao{
+  width: 100%;  
+  margin: 0 auto;
+}
+
+  #sec1 .words{
+    width: 50%;
+  }
+
+
+  .words p{
+    font-size: 0.5rem;
+  }
+
+ 
+
+  
+}  
 
   
