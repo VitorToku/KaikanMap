@@ -4,11 +4,9 @@ import ListaPags from '../ListaPags'
 
 function Header() {
     return(        
-        <div>
-            <img src = {Logo} alt="Logotipo" />
-            <ListaPags />
-            
-        </div>
+        <>
+            <ListaPags />            
+        </>
 
     )
 }

@@ -6,8 +6,6 @@ import logo from '../../img/logo.png'
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from "react-router-dom";
 
-
-
 const Containe = styled.div
     `
 
@@ -82,7 +80,7 @@ function HomePage() {
                 </div>
             </main>
           <section class="separar"/>
-            
+
             <section id="sec1">
                 <div id="img"><img class=" " src={logo} alt="logo" /></div>
 
@@ -99,6 +97,7 @@ function HomePage() {
             </section>
                </div>
 )
+
 }
 
 
