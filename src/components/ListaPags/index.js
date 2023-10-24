@@ -99,7 +99,6 @@ function ListaPags() {
       </nav>      
     </>
   )
-
 }
 
 export default ListaPags
