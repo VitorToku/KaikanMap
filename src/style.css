@@ -1,4 +1,27 @@
+.containe{
+  display: grid;
+  gap: 1px;
+   grid-template-columns: 1fr, 1fr;
+   grid-template-columns: 1fr, 1fr;
+   grid-template-rows:  2fr, 2fr, 1.6fr;
+   grid-template-areas:
+                      "a m"
+                      "s1 s1 "
+                      ;
+      }
 
+  aside{
+    grid-area: a;
+    margin-bottom: 150px;
+  }
+
+  main{
+    grid-area: m;
+  }
+ 
+  #sec1{
+    grid-area: s1;
+  }
 
 .minhacor{
     background-color: #DCE6EA;
@@ -72,14 +95,20 @@
     padding-bottom: 5rem;    
 
   }
-
   main{
     background-color: white;
-    margin: 0;
   }
 
+
 main #carrosel{
-  justify-self: center;
+
+  width: 100%;
+  width:640px;
+   height:360px;
+}
+main #carrosel img{
+  height: 100%;
+  width: 100%;
 }
   #sec1{
     display:grid;
@@ -87,12 +116,21 @@ main #carrosel{
     grid-template-columns: 0.4fr, 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "i d";
-    
+    background-color: #DCE6EA;
+    padding: 2rem;
+
 
   }
 
   #sec1 #img{
     grid-area:i;
+    display: flex;
+    align-items: center;
+   }
+
+   #sec #img img{
+      
+
    }
  
    #sec1 .divisao{
@@ -124,7 +162,7 @@ main #carrosel{
   
   
   .fst-hr{
-      width: 80%;
+      width: 70%;
   }
 
   .impText{
@@ -142,25 +180,41 @@ main #carrosel{
 
 
   .impText{
-    font-size: 36px;
+    font-size: 32px;
     padding-left: 10px;
     margin-left: 100px;
   }
 
 
 .call{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 500;
     margin-top: 50px;
-    padding-top: 116px;
-    
+    padding-top: 116px;    
 }
 
 .fst-hr, .call, .description, .impText{
     margin-left: 41px;
     
 }
- 
+@media (max-width:1075px){   
+  
+  aside .impText{
+font-size: 20px;
+  }
+
+  aside .fst-hr{
+    width: 50%;
+  }
+
+  aside .call{
+    font-size: 24px;
+  }
+
+  aside .description{
+    font-size: 16px;
+  }
+}
 
 @media (max-width:768px){
   .containe{
@@ -172,21 +226,17 @@ main #carrosel{
                 ;
          
   }
-
   aside{
     background-color: white;
-    padding-bottom: 6rem;    
-
+    padding-bottom: 6rem;  
+    margin-bottom: 80px;    
   }
 
- main{
-  width: 100%;
- }
-
+ 
  main #carrosel{
   width: 90%;
   margin: 0 auto;
-  
+
 }
 
 
