@@ -23,7 +23,6 @@
     grid-area: s1;
   }
 
-  
 .minhacor{
     background-color: #DCE6EA;
     
@@ -96,14 +95,8 @@
     padding-bottom: 5rem;    
 
   }
-
-  
-
   main{
     background-color: white;
-    
-    
-    
   }
 
 
@@ -126,6 +119,7 @@ main #carrosel img{
     background-color: #DCE6EA;
     padding: 2rem;
 
+
   }
 
   #sec1 #img{
@@ -136,6 +130,7 @@ main #carrosel img{
 
    #sec #img img{
       
+
    }
  
    #sec1 .divisao{
@@ -195,23 +190,17 @@ main #carrosel img{
     font-size: 36px;
     font-weight: 500;
     margin-top: 50px;
-    padding-top: 116px;
-    
+    padding-top: 116px;    
 }
 
 .fst-hr, .call, .description, .impText{
     margin-left: 41px;
     
 }
- 
-
-@media (max-width:1075px){
-  
+@media (max-width:1075px){   
   
   aside .impText{
 font-size: 20px;
- 
-
   }
 
   aside .fst-hr{
@@ -226,6 +215,7 @@ font-size: 20px;
     font-size: 16px;
   }
 }
+
 @media (max-width:768px){
   .containe{
     grid-template-columns: 1fr;
@@ -236,13 +226,10 @@ font-size: 20px;
                 ;
          
   }
-
-
   aside{
     background-color: white;
     padding-bottom: 6rem;  
-    margin-bottom: 80px;
-    
+    margin-bottom: 80px;    
   }
 
  
@@ -271,7 +258,6 @@ font-size: 20px;
 
   #sec1{
     width: auto;
-    
   }
 
 #sec1 #img{

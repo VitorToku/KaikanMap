@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import HomePage from './components/home';
 import Org from './components/home'
 import Footer from './components/Footer'
@@ -18,6 +19,7 @@ function App() {
       <HomePage/>
       <Footer/>
     </StyleBody>
+
   );
 }
 

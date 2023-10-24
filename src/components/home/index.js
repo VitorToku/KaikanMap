@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 
 
-
 const Containe = styled.div
     `
 
@@ -81,12 +80,9 @@ function HomePage() {
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
-
             </main>
-
-            <section class="separar"/>
-
+          <section class="separar"/>
+            
             <section id="sec1">
                 <div id="img"><img class=" " src={logo} alt="logo" /></div>
 
@@ -101,11 +97,8 @@ function HomePage() {
                     </p>
                 </div>
             </section>
-
-            
-        </div>
-        
-    )
+               </div>
+)
 }
 
 
