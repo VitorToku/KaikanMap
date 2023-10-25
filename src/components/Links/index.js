@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 const StyleLinks = styled.div`
     width: 20%;
+    
+    @media(max-width:992px){
+        width: 100%;
+    }
 `
 const Titulo = styled.p`
     color:#DCE6EA;    
@@ -14,7 +18,8 @@ const StyleLista = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;    
+    gap: 10px;
+    padding:0;
 `
 const Opcoes = styled.li`
     font-size: small;
