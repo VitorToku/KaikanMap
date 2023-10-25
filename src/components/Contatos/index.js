@@ -6,11 +6,18 @@ const StyleContatos = styled.div`
     gap: 1rem;
     width: 20%;
     margin-right: 10%;
+
+    @media(max-width: 992px){
+        display:none;
+    }
 `
 const Botao = styled.button`
     font-size: 20px;
     font-weight:500;
     color: #003785;
+    @media(max-width: 992px){
+        font-size: 15px;
+    }
 `
 const Link = styled.a`
     text-decoration: none;
