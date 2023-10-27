@@ -1,9 +1,0 @@
-.containe{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:  1.6fr, 2fr, 1.4fr;
-    grid-template-areas:
-                       "a m"
-                       "s1 s1 "
-                       ;
-}
