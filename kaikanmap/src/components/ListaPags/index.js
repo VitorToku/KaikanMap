@@ -1,9 +1,6 @@
 import styled from 'styled-components'
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../img/logo.png'
+import {Link} from 'react-router-dom'
 
 const pags = ["A EQUIPE", "LISTA DE KAIKANS", "CALENDÁRIO"]
 
@@ -81,7 +78,7 @@ function ListaPags() {
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">A EQUIPE</a>
+                <a class="nav-link" aria-current="page" href="#"><Link to="/equipe">A EQUIPE</Link></a>
               </li>
               <Barra className='vr'></Barra>
               <li class="nav-item">
@@ -89,7 +86,7 @@ function ListaPags() {
               </li>
               <Barra className='vr'></Barra>
               <li class="nav-item">
-                <a class="nav-link" href="#">CALENDÁRIO</a>
+                <a class="nav-link" href="#"><Link to="/calendario">Calendario</Link></a>
               </li>              
             </ul>    
             <Botao>LOGIN</Botao>
