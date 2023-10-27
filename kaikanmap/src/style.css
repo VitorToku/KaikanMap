@@ -1,0 +1,281 @@
+
+.containe{
+  display: grid;
+  gap: 1px;
+   grid-template-columns: 1fr, 1fr;
+   grid-template-columns: 1fr, 1fr;
+   grid-template-rows:  2fr, 2fr, 1.6fr;
+   grid-template-areas:
+                      "a m"
+                      "s1 s1 "
+                      ;
+      }
+
+  aside{
+    grid-area: a;
+    margin-bottom: 150px;
+  }
+
+  main{
+    grid-area: m;
+  }
+ 
+  #sec1{
+    grid-area: s1;
+  }
+
+.minhacor{
+    background-color: #DCE6EA;
+    
+
+}
+
+.navbar-nav li a
+{
+    color: #003785 !important;
+}
+
+.logo{
+    width: 50%;
+    height: 98px;
+    width: 142px;
+    padding: 0 !important;
+}
+
+.navbar-itens{
+    font-size: 20px;
+    align-self: flex-end;
+    margin-top: 10px
+    
+}
+.vl {
+    border-left: 1.5px solid  #000;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 6px;
+    margin-top: 20px;
+  }
+
+  .button{
+  border-radius: 0px;
+  padding: 12px;
+  padding-left: 15px;
+  padding-right: 20 px;
+  margin-left: 10px;
+  background-color: #003785;
+  color: #DCE6EA;
+  
+
+  }
+  .btn-register{
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn-login{
+    width: 100px;
+    height: 65px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .customsize{
+    height: 110px;  
+    
+  }
+ 
+  aside{
+    background-color: white;
+    padding-bottom: 5rem;    
+
+  }
+  main{
+    background-color: white;
+  }
+
+
+main #carrosel{
+
+  width: 100%;
+  width:640px;
+   height:360px;
+}
+main #carrosel img{
+  height: 100%;
+  width: 100%;
+
+}
+  #sec1{
+    display:grid;
+    gap: 1rem;
+    grid-template-columns: 0.4fr, 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "i d";
+    background-color: #DCE6EA;
+    padding: 2rem;
+  }
+
+  #sec1 #img{
+    grid-area:i;
+    display: flex;
+    align-items: center;
+   }
+
+   #sec #img img{
+
+   }
+ 
+   #sec1 .divisao{
+     grid-area: d;
+   }
+
+  #sec1 .words{
+    width: 1011;
+    height: auto;
+    margin-right: 100;
+    align-self: flex-start;
+    padding-right: 11;
+    margin-left: 52;
+
+    
+  }
+
+  #sec1 .words p{
+    font-size: 1.1rem;
+  }
+
+  #KAIKAN2{
+    font-size: 36px;
+    color: #003785;
+    margin-left: 13px;
+    
+  }
+
+  .fst-hr{
+      width: 70%;
+  }
+
+  .impText{
+    color: #003785 ;
+  }
+
+  .description{
+    color: #0D33FC;
+    font-weight: 600px;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding-left: 10px;
+    
+  }
+
+
+  .impText{
+    font-size: 32px;
+    padding-left: 10px;
+    margin-left: 100px;
+  }
+
+
+.call{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 50px;
+    padding-top: 116px;   
+}
+
+.fst-hr, .call, .description, .impText{
+    margin-left: 41px;
+    
+}
+@media (max-width:1075px){   
+  
+  aside .impText{
+font-size: 20px;
+  }
+
+  aside .fst-hr{
+    width: 50%;
+  }
+
+  aside .call{
+    font-size: 24px;
+  }
+
+  aside .description{
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width:768px){
+  .containe{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                    "a"
+                    "m "
+                    "s1 "
+                ;
+         
+  }
+  aside{
+    background-color: white;
+    padding-bottom: 6rem;  
+    margin-bottom: 80px;    
+  }
+ 
+ main #carrosel{
+  width: 90%;
+  margin: 0 auto;
+}
+ #sec1{
+  display:grid;
+  gap: 1rem; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr, 1fr;
+  grid-template-areas: "i"
+                       "d";  
+
+}
+
+  #sec1{
+    width: auto;
+  }
+
+#sec1 #img{
+  
+  
+}
+
+#sec1 #img img{
+  width: 50%;
+  height: auto;
+  
+}
+
+#sec1 .divisao{
+  width: 100%;  
+  margin: 0 auto;
+}
+
+  #sec1 .words{
+    width: 50%;
+  }
+
+
+  .words p{
+    font-size: 0.5rem;
+  }
+
+ 
+
+  
+}  
+
+  
