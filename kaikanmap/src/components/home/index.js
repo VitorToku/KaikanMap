@@ -60,8 +60,7 @@ const Descricao = styled.div`
 `
 
 function HomePage() {
-    return (
-        <>          
+    return (                 
             <Corpo>
                 <TextoCarrossel>
                     <BarraHorizontal />
@@ -114,8 +113,6 @@ function HomePage() {
                     </Descricao>
                 </Kaikan>
             </Corpo>
-
-        </>
     )
 
 }

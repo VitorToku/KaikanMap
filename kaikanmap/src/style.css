@@ -1,4 +1,7 @@
-
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .containe{
   display: grid;
   gap: 1px;
@@ -14,6 +17,7 @@
   aside{
     grid-area: a;
     margin-bottom: 150px;
+    
   }
 
   main{
