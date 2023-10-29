@@ -18,8 +18,9 @@ const Externo = styled.div`
     background: linear-gradient(180deg, rgba(0,55,133,1) 17%, rgba(0,212,255,1) 100%);
     max-width: 1000px;
     max-height: 600px;
-    margin: 0 auto;
+    margin: 25px auto;
     padding: 20px;    
+    border: solid black 5px;
 
 `
 const Interno = styled.div`
@@ -28,6 +29,8 @@ const Interno = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 8px;
+
 `
 const Kaikans =[{
     nome: 'Kaikan do Cipó',
@@ -47,6 +50,18 @@ const Kaikans =[{
 }, {
     nome: 'Kaikan de Sorocaba',
     Descricao: "adkansdansdajsdaçfkpdogjajmfa"
+}, {
+    nome: 'Kaikan de Sorocaba',
+    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
+}, {
+    nome: 'Kaikan de Sorocaba',
+    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
+}, {
+    nome: 'Kaikan de Sorocaba',
+    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
+}, {
+    nome: 'Kaikan de Sorocaba',
+    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
 }];
 
 function ListaDeKaikans(){
@@ -59,8 +74,7 @@ function ListaDeKaikans(){
                     {Kaikans.map((Item) =>                    
                         (<Kaikan>
                             <Interno>
-                            <a href="# ">{Item.nome}</a>
-                            
+                            <a href="# ">{Item.nome}</a>                            
                             {Item.Descricao}
                             </Interno>
                         </Kaikan>)

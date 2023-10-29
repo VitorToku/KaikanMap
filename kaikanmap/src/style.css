@@ -20,7 +20,10 @@ html {
       var(--c2) 0 296.15deg,var(--c1) 0);
   background-size: calc(2*var(--s)) var(--s);
 }
-
+a{
+  text-decoration: none;
+  color:black;
+}
 .containe{
   display: grid;
   gap: 1px;
@@ -49,6 +52,7 @@ html {
 
 .minhacor{
     background-color: #DCE6EA;
+    
     
 
 }
