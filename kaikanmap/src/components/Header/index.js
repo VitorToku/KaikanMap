@@ -79,19 +79,20 @@ function Header() {
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"><Link to="/equipe">A EQUIPE</Link></a>
+                <a class="nav-link" aria-current="page" href=""><Link to="/equipe">A EQUIPE</Link></a>
               </li>
               <Barra className='vr'></Barra>
               <li class="nav-item">
-                <a class="nav-link" href="#"><Link to="/listakaikan">Lista de Kaikans</Link></a>
+                <a class="nav-link" href=""><Link to="/listakaikan">Lista de Kaikans</Link></a>
               </li>
               <Barra className='vr'></Barra>
               <li class="nav-item">
-                <a class="nav-link" href="#"><Link to="/calendario">Calendario</Link></a>
+                <a class="nav-link" href=""><Link to="/calendario">Calendario</Link></a>
               </li>              
             </ul>    
             <Botao>LOGIN</Botao>
-            <Botao>REGISTRE-SE</Botao>     
+            <Botao>REGISTRE-SE</Botao>  
+            <Link to='/evento'>Evento</Link>
           </div>
         </div>
       </nav>      
