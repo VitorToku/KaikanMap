@@ -1,25 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components'
-import style from '../../style.css'
 import vitao from '../../img/vitao.png'
 import logo from '../../img/logo.png'
-import Carousel from 'react-bootstrap/Carousel';
 import { Link } from "react-router-dom";
-
-const Containe = styled.div
-    `
-    .containe{
-        display: grid;
-        gap: 12px;
-         grid-template-columns: 1fr, 1fr;
-         grid-template-columns: 1fr, 1fr;
-         grid-template-rows:  2fr, 2fr, 1.6fr;
-         grid-template-areas:
-                            "a m"
-                            "s1 s1 "
-                            ;
-            }
-`
 
 const Corpo = styled.div`
     display: grid;
@@ -77,8 +60,7 @@ const Descricao = styled.div`
 `
 
 function HomePage() {
-    return (
-        <>          
+    return (                 
             <Corpo>
                 <TextoCarrossel>
                     <BarraHorizontal />
@@ -131,8 +113,6 @@ function HomePage() {
                     </Descricao>
                 </Kaikan>
             </Corpo>
-
-        </>
     )
 
 }
