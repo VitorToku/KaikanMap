@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body{
+  font-family: 'Poppins';
+}
+
+.contain {
+    display: grid;
+    
+    grid-template-columns: 1fr;  
+    grid-template-areas: 
+      "s1 "
+      "m "
+      "s2 "
+      "s3 ";
+  }
+  
+  main { 
+    grid-area: m;
+    padding-left: 1.2rem;
+    padding-top: 2rem;
+    background-color: #DCE6EA !important;
+  }
+  
+  #s1 {
+    grid-area: s1;
+    background-color: white;
+    padding: 1.4rem;
+    
+  }
+  
+  #s2 {
+    grid-area: s2;
+  }
+  
+  #s3 {
+    grid-area: s3;
+  }
+
+  #tit{
+    color:#003785;
+    font-size: 56px;
+  }
+
+  #hrzao{
+    width: 20%;
+    
+  }
+  #call{
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  #fala{
+    font-size: 16px;
+    padding-top: 100px;
+    font-weight: 400;
+    padding-bottom:80px;
+  }
+
+  #s2{
+    display: grid;
+    padding-top: 80px;
+    gap:100px;
+    margin-left: 142px;
+    margin-right: 142px;
+    padding-bottom: 100px;
+    
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas: "c1 c2 c3"
+                         
+                      ;
+  }
+  #caixas{
+   
+    border: solid 1px black;
+    
+    }
+  #c1{
+    grid-area: c1;
+    background-color:#DCE6EA;
+    width: 300px;
+    height: 500px;
+  }
+  #c2{
+    background-color:#DCE6EA;
+    grid-area:c2;
+    width: 300px;
+    height: 500px;
+  }
+  #c3{
+    background-color:#DCE6EA;
+    grid-area:c3;
+    width: 300px;
+    height: 500px;
+    margin-right: 142px;
+  
+  }
+ 
