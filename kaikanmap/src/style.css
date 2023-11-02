@@ -1,5 +1,5 @@
 body{
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 html {
@@ -123,9 +123,7 @@ a{
     padding-bottom: 5rem;    
 
   }
-  main{
-    background-color: white;
-  }
+  
 
 
 main #carrosel{
@@ -189,7 +187,7 @@ main #carrosel img{
       width: 70%;
   }
 
-  .impText{
+  .impTextt{
     color: #003785 ;
   }
 
