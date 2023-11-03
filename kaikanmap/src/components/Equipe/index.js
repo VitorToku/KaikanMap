@@ -36,17 +36,21 @@ function Equipe() {
                         <section id="objetivo">
                             <img src={objetivo} />
                             <h3 id="ob">OBJETIVO:</h3>
-                            <h4 id="obText">PRESERVAR A CULTURA JAPONESA </h4>
 
                         </section>
+                        <section id="preserv">
+                            <h4 id="obText">PRESERVAR A CULTURA JAPONESA </h4>
+                        </section>
 
-                       
+
                         <section id="valor">
                             <img src={diamante} />
-                            <h3 id="vl"> VALORES:</h3>
-                            <p class="p">DIVULGAÇÃO</p>
-                            <p class="p">RESPONSABILIDADE</p>
-                            <p class="p">  TRANSPARÊNCIA</p>
+                            <ul>
+                                <li id="destaq">VALORES:</li>
+                                <li id="font">DIVULGAÇÃO</li>
+                                <li id="font">RESPONSABILIDADE</li>
+                                <li id="font">TRANSPARÊNCIA</li>
+                            </ul>
 
                         </section>
 
