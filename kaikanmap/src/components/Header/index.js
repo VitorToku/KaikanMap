@@ -95,7 +95,7 @@ function Header() {
               </li>              
             </ul>    
             <Botao>LOGIN</Botao>
-            <Botao>REGISTRE-SE</Botao>              
+            <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>           
           </div>
         </div>
       </nav>      
