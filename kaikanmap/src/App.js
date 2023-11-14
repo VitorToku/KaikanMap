@@ -20,9 +20,9 @@ function App() {
       <Route path='/' element={<Home/>}  />      
       <Route path='equipe' element={<Equipe/>} />
       <Route path='listakaikan' element={<ListaKaikan/>} />
-      <Route path='calendario' element={<Calendario/>} /> 
-      <Route path='evento' element={<Evento/>} /> 
-      <Route path ='registro' element = {<RegistroK/>} />
+      <Route path='calendario' element={<Calendario/>} />        
+      <Route path="/evento/:id" element={<Evento/>} />
+
       
     </Routes>
   );

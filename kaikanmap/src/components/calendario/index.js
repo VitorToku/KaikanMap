@@ -1,25 +1,8 @@
+import React,{useEffect, useState} from 'react';
 import ImgCalendario from '../../img/Calendar.png'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-
-const Eventos =[{
-    nome: 'Treino de Taiko',
-    Data: '11/10/2024',
-    local: 'Embu-Guaçu'
-}, {
-    nome: 'Bingo',
-    Data: '15/08/2024',
-    local: 'Registro'
-}, {
-    nome: 'Tarde de Gincanas',
-    Data: '01/04/2024',
-    local: 'Ubiratã'
-},{
-    nome: 'Yakissoba Beneficente',
-    Data: '01/04/2024',
-    local: 'Santo Amaro'
-}
-];
+import Axios from 'axios';
 
 const Evento = styled.div`
     display: flex;
@@ -50,8 +33,6 @@ const FundoLista = styled.ul`
     @media(max-width:425px){
         margin: 10px 10px;
     }
-
-
 `
 const Filtro = styled.button`
     display: flex;
@@ -83,6 +64,25 @@ const Externo = styled.div`
 `
 
 function Calendario() {
+    const[listaEventos,setListaEventos] = useState();    
+    const formatDate = (datestring) =>{        
+        const options = { year: "numeric", month: "long", day: "numeric"}
+        return new Date(datestring).toLocaleDateString(undefined, options)        
+    }
+
+    useEffect(()=>{
+        const fetchData = async () =>{
+            try{
+                const response = await Axios.get("http://localhost:3001/listaEventos")
+                .then(function (response){
+                    setListaEventos(response.data);
+                })
+            } catch(error){
+                console.error("Erro aos buscar dados:", error)
+            }
+        }
+        fetchData();        
+    }, [])
     return (
         <Externo>  
             <CalendCima>
@@ -93,13 +93,14 @@ function Calendario() {
             <FundoLista className='overflow-auto'>                
                 <div>
                     <ListaEventos>
-                        {Eventos.map((evento)=>
+                        
+                        {listaEventos?.map((evento)=>
                         (<li>
-                            <Link to='/evento'>
+                            <Link to= {`/evento/${evento.id}`} >                               
                             <Evento>
-                                <ElemEvento>{evento.Data}</ElemEvento>
-                                <ElemEvento>{evento.nome}</ElemEvento>
-                                <ElemEvento>{evento.local}</ElemEvento>
+                                <ElemEvento>{formatDate(evento.dia)}</ElemEvento>                                
+                                <ElemEvento>{evento.NomeEvento}</ElemEvento>
+                                <ElemEvento>{evento.LocalEvento}</ElemEvento>
                             </Evento>
                             </Link>
                         </li>)
