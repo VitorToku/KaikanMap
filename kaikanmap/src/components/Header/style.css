@@ -1,8 +1,0 @@
-.gira{
-    transition: transform 1s;
-
-}
-
-.gira:hover{
-    transform: scale(1.1);
-}

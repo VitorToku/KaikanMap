@@ -27,10 +27,6 @@ const Opcoes = styled.li`
 const Referencia = styled.a`
     text-decoration: none;
     color: black;
-    &:hover {
-        text-decoration:underline;
-    }
-
 ` 
 
 function Links(){

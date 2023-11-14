@@ -23,24 +23,17 @@ const Logo = styled.img`
         display:none;
     }
 `
-
-const Email = styled.a`
-text-decoration: none;
-color: black;
-margin-left:60px;
-`
-const Direitos = styled.a`
-text-decoration: none;
-color: black;
- margin-right:5px;
-`
+const Referencia = styled.a`
+    text-decoration: none;
+    color: black;
+` 
 
 function Baixo(){
     return(
         <StyleBaixo>
             <Logo src={logo2} alt=""/>      
-            <Email href="#">kaikanmap@gmail.com</Email>
-            <Direitos>DIREITOS RESERVADOS POR KAIKANMAP</Direitos> 
+            <Referencia href="#">Kaikanmap@gmail.com</Referencia>
+            <Referencia>Direitos Reservados KaikanMap</Referencia> 
         </StyleBaixo>
     )
 }
