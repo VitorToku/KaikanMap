@@ -12,15 +12,9 @@ const StyleContatos = styled.div`
     }
 `
 const Botao = styled.button`
-    font-size: 18px;
+    font-size: 20px;
     font-weight:500;
     color: #003785;
-    width:180px;
-    height:48px;
-    transition: transform 0.2s;
-    &:hover {
-        transform: scale(1.2);
-    }
     @media(max-width: 992px){
         font-size: 15px;
     }

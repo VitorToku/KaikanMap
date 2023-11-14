@@ -8,7 +8,6 @@ import Equipe from './pages/equipe';
 import ListaKaikan from './pages/lista';
 import Evento from './pages/evento'
 import './style.css';
-import RegistroK from './pages/registro';
 
 
 
@@ -22,7 +21,6 @@ function App() {
       <Route path='listakaikan' element={<ListaKaikan/>} />
       <Route path='calendario' element={<Calendario/>} /> 
       <Route path='evento' element={<Evento/>} /> 
-      <Route path ='registro' element = {<RegistroK/>} />
       
     </Routes>
   );
