@@ -2,6 +2,7 @@ import Logo from '../../img/logo.svg'
 
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import style from '../Header/style.css'
 
 const pags = ["A EQUIPE", "LISTA DE KAIKANS", "CALENDÁRIO"]
 
@@ -38,7 +39,6 @@ const BotaoMenu = styled.button`
   }
 `
 
-
 const Links = styled.div`
   display: flex;
   align-items: center;
@@ -54,6 +54,10 @@ const Botao = styled.button`
   border: none;
   color: #DCE6EA; 
   margin: 0 10px;
+  transition: transform 0.4s;
+  &:hover{
+    transform:scale(1.2);
+  }
 
   @media(max-width: 992px){
     min-width: 200px;
@@ -79,19 +83,19 @@ function Header() {
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href=""><Link to="/equipe">A Equipe</Link></a>
+                <a class="nav-link gira" aria-current="page" href=""><Link to="/equipe">A EQUIPE</Link></a>
               </li>
               <Barra className='vr'></Barra>
               <li class="nav-item">
-                <a class="nav-link" href=""><Link to="/listakaikan">Lista de Kaikans</Link></a>
+                <a class="nav-link gira" href=""><Link to="/listakaikan">LISTA DE KAIKANS</Link></a>
               </li>
               <Barra className='vr'></Barra>
               <li class="nav-item">
-                <a class="nav-link" href=""><Link to="/calendario">Calendario</Link></a>
+                <a class="nav-link gira" href=""><Link to="/calendario">CALENDÁRIO</Link></a>
               </li>              
             </ul>    
             <Botao>LOGIN</Botao>
-            <Botao>REGISTRE-SE</Botao>              
+            <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>           
           </div>
         </div>
       </nav>      
