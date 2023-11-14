@@ -23,26 +23,6 @@ const BarraHorizontal = styled.hr`
     width: 50%;
     
 `
-const Call = styled.p `
-margin-top:2rem;
-margin-left:1rem;
-color:#0D33FC;
-font-weight:500;
-
-
-`
-
-const Imp = styled.h3 `
-margin-top:2rem;
-font-size:36px;
-
-`
-
-const Titulo = styled.h2`
-color:#003785;
-
-`
-
 const TextoCarrossel = styled.div`
     margin: 20px;
     grid-area: a;
@@ -84,9 +64,9 @@ function HomePage() {
             <Corpo>
                 <TextoCarrossel>
                     <BarraHorizontal />
-                    <Titulo >PROXIMOS EVENTOS</Titulo>
-                    <Imp>Venha fazer parte da  nossa comunidade. </Imp>
-                    <Call>PROJETO TAIKO</Call>
+                    <h2>PROXIMOS EVENTOS</h2>
+                    <h3>Venha fazer parte da  nossa comunidade. </h3>
+                    <p>PROJETO TAIKO</p>
                 </TextoCarrossel>
 
                 <Carrossel>
@@ -123,7 +103,7 @@ function HomePage() {
 
                     <Descricao>
                         <hr />
-                        <Titulo>O QUE É KAIKAN?</Titulo>
+                        <h2>O QUE É KAIKAN?</h2>
                         <p>
                             Formado a partir dos termos “kai” (que quer dizer reunião) e “kan” (prédio), originalmente “Kaikan” era o nome dado apenas ao espaço onde os imigrantes, ainda pouco integrados ao Brasil, se reuniam para se confraternizar.
                         </p>

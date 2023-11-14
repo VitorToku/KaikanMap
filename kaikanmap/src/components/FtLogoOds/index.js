@@ -16,10 +16,6 @@ const PrimeiraParte = styled.div`
 const Ods = styled.img`
     width: 4.563rem;
     height: 4.563rem;
-    transition: transform0.4s;
-    &:hover{
-        transform:scale(1.2);
-    }
 
     @media(max-width:992px){
         display:none;
