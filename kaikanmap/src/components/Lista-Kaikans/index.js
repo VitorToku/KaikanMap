@@ -33,38 +33,6 @@ const Interno = styled.div`
     border-radius: 8px;
 
 `
-const Kaikans =[{
-    nome: 'Kaikan do Cipó',
-    Descricao: "aksdioasjdioasdioahsduhas"
-}, {
-    nome: 'Kaikan de Casa Grande',
-    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
-}, {
-    nome: 'Kaikan João Branco',
-    Descricao: "aksdioasjdioasdioahsduhas"
-}, {
-    nome: 'Kaikan de Santo Amaro',
-    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
-}, {
-    nome: 'ACAL',
-    Descricao: "aksdioasjdioasdioahsduhas"
-}, {
-    nome: 'Kaikan de Sorocaba',
-    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
-}, {
-    nome: 'Kaikan de Sorocaba',
-    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
-}, {
-    nome: 'Kaikan de Sorocaba',
-    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
-}, {
-    nome: 'Kaikan de Sorocaba',
-    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
-}, {
-    nome: 'Kaikan de Sorocaba',
-    Descricao: "adkansdansdajsdaçfkpdogjajmfa"
-}];
-
 function ListaDeKaikans(){
     const [listaKaikans, setListaKaikans] = useState();
 
@@ -81,12 +49,11 @@ function ListaDeKaikans(){
             } catch(error){
                 console.error("Erro ao buscar dados:", error);
             }
-        };
-        console.log(listaKaikans)
+        };        
         fetchData();
     }, [] );    
 
-    console.log(listaKaikans)
+    
     
     return(        
         <>
