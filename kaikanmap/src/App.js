@@ -9,8 +9,8 @@ import ListaKaikan from './pages/lista';
 import Evento from './pages/evento'
 import './style.css';
 import RegistroK from './pages/registro';
-
-
+import NomedoKaikan from './components/NomedoKaikan';
+import Registro_evento from './components/Registro_evento';
 
 
 function App() {
@@ -22,6 +22,8 @@ function App() {
       <Route path='listakaikan' element={<ListaKaikan/>} />
       <Route path='calendario' element={<Calendario/>} />        
       <Route path="/evento/:id" element={<Evento/>} />
+      <Route path='/NomedoKaikan' element={<NomedoKaikan/>}  />
+      <Route path='/RegistroEvento' element={<Registro_evento/>}  /> 
 
       
     </Routes>
