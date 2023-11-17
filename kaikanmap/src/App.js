@@ -9,8 +9,8 @@ import ListaKaikan from './pages/lista';
 import Evento from './pages/evento'
 import './style.css';
 import RegistroK from './pages/registro';
-import NomedoKaikan from './components/NomedoKaikan';
-import Registro_evento from './components/Registro_evento';
+import NomedoKaikan from './pages/NomedoKaikan';
+import Registro_evento from './pages/Registro_evento';
 
 
 function App() {

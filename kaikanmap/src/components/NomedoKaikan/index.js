@@ -1,7 +1,7 @@
 import vitao from '../../img/vitao.png'
 import './style.css';
 
-function NomedoKaikan(){
+function NomedoKaikanComp(){
 
 return (
     <div className='container'>
@@ -17,4 +17,4 @@ return (
   )
 }
 
-export default NomedoKaikan
+export default NomedoKaikanComp

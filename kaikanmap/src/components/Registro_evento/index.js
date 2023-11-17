@@ -1,9 +1,9 @@
 import './style.css';
 
-function Registro_evento(){
+function Registro_evento() {
 
 
-return (
+  return (
     <div className='container'>
       <p class="title">Registro Evento</p>
       <div className='contain'>
@@ -15,10 +15,19 @@ return (
         </div>
         <div class='contain-inputs'>
           <label className='label-text'>
-            Data e horário:
+            Nome do Local:
           </label>
-          <input type='date' class="input-text" />
-          <input type='time' class="input-text" />
+          <input type='text' class="input-text" />
+        </div>
+        <div class='contain-inputs'>
+          <label className='label-text'>
+            Data:
+          </label>
+          <input type='date' class="input-text1" />
+          <label className='label-text'>
+            Horário:
+          </label>
+          <input type='time' class="input-text1" />
         </div>
         <div class='contain-inputs'>
           <label className='label-text'>
@@ -37,7 +46,7 @@ return (
         </button>
       </div>
     </div>
-  )  
+  )
 }
 
 export default Registro_evento

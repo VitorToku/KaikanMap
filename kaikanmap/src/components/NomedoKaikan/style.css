@@ -8,12 +8,11 @@
   
   .container {
     width: 100vw;
-    height: 100vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    overflow-x: hidden;
   }
   
   .title {
@@ -33,7 +32,7 @@
   .contain {
     padding: 40px 100px;
     width: 70%;
-    background-color: gray;
+    background-color: gray;    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -49,7 +48,7 @@
     text-align: center;
   }
   
-  @media (max-width: 720px) {
+  @media (max-width:1100px) {
     .contain {
       padding: 20px 40px;
     }
