@@ -65,9 +65,24 @@ const Externo = styled.div`
 
 function Calendario() {
     const[listaEventos,setListaEventos] = useState();    
-    const formatDate = (datestring) =>{        
-        const options = { year: "numeric", month: "long", day: "numeric"}
-        return new Date(datestring).toLocaleDateString(undefined, options)        
+    const formatDate = (datestring) =>{     
+       
+        const config = {
+            year: 'numeric', 
+            month: '2-digit',
+            day: '2-digit'
+                    
+        }        
+        return new Date(datestring).toLocaleDateString("pt-br",config);        
+    }
+    const formatTime = (datestring) =>{    
+        
+        const config = {               
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit'        
+        }        
+        return new Date(datestring).toLocaleTimeString("pt-br",config);        
     }
 
     useEffect(()=>{
@@ -98,7 +113,7 @@ function Calendario() {
                         (<li>
                             <Link to= {`/evento/${evento.id}`} >                               
                             <Evento>
-                                <ElemEvento>{formatDate(evento.dia)}</ElemEvento>                                
+                                <ElemEvento>{formatDate(evento.DataEHorario)}</ElemEvento>                                
                                 <ElemEvento>{evento.NomeEvento}</ElemEvento>
                                 <ElemEvento>{evento.LocalEvento}</ElemEvento>
                             </Evento>
