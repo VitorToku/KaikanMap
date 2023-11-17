@@ -53,12 +53,22 @@ function DescEvento(){
     const { id } = useParams();
     const[dadosEvento,setDadosEvento] = useState(null);
 
-    const formatDate = (datestring) =>{        
-        const options = { year: "numeric", month: "long", day: "numeric"}
-        return new Date(datestring).toLocaleDateString(undefined, options)        
+    const formatDate = (datestring) =>{    
+        const config = {
+            year: 'numeric', 
+            month: '2-digit',
+            day: '2-digit'
+                    
+        }        
+        return new Date(datestring).toLocaleDateString("pt-br",config);        
     }
-    const formatTime = (datestring) =>{               
-        return new Date(datestring).getTime()        
+    const formatTime = (datestring) =>{    
+        const config = {               
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit'        
+        }        
+        return new Date(datestring).toLocaleTimeString("pt-br",config);        
     }
     
     
@@ -84,11 +94,11 @@ function DescEvento(){
                         <Data>
                             <h1>{dadosEvento[0].NomeEvento}</h1>
                             <h2>{dadosEvento[0].NomeKaikan} - {dadosEvento[0].LocalEvento}</h2>
-                            <p>{formatDate(dadosEvento[0].dia)} - {formatTime(dadosEvento[0].Horario)} </p>
+                            <p>{formatDate(dadosEvento[0].DataEHorario)} - {formatTime(dadosEvento[0].DataEHorario)} </p>
                         </Data>
                         <Descricao>
                             <ImgEvento src={dadosEvento[0].imagem} alt={dadosEvento[0].imgEvento}></ImgEvento> 
-                            <p>{dadosEvento[0].Descricao} {dadosEvento[0].imagem}</p>
+                            <p>{dadosEvento[0].Descricao}</p>
                         </Descricao>
                     </>
                 ) : 

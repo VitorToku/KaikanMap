@@ -22,9 +22,9 @@ function App() {
       <Route path='listakaikan' element={<ListaKaikan/>} />
       <Route path='calendario' element={<Calendario/>} />        
       <Route path="/evento/:id" element={<Evento/>} />
+      <Route path="/registro" element={<RegistroK/>} />
       <Route path='/NomedoKaikan' element={<NomedoKaikan/>}  />
       <Route path='/RegistroEvento' element={<Registro_evento/>}  /> 
-
       
     </Routes>
   );
