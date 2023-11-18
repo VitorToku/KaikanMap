@@ -94,7 +94,7 @@ function DescEvento(){
                         <Data>
                             <h1>{dadosEvento[0].NomeEvento}</h1>
                             <h2>{dadosEvento[0].NomeKaikan} - {dadosEvento[0].LocalEvento}</h2>
-                            <p>{formatDate(dadosEvento[0].DataEHorario)} - {formatTime(dadosEvento[0].DataEHorario)} </p>
+                            <p>{formatDate(dadosEvento[0].DiaEHora)} - {formatTime(dadosEvento[0].DiaEHora)} </p>
                         </Data>
                         <Descricao>
                             <ImgEvento src={dadosEvento[0].imagem} alt={dadosEvento[0].imgEvento}></ImgEvento> 

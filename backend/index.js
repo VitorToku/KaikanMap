@@ -10,6 +10,7 @@ const db = mysql.createConnection({
     host:"localhost",
     user: "root",    
     database:"kaikanmap",
+    password:"testecrud1234"
 });
 
 

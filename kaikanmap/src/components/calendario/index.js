@@ -75,14 +75,13 @@ function Calendario() {
         }        
         return new Date(datestring).toLocaleDateString("pt-br",config);        
     }
-    const formatTime = (datestring) =>{    
-        
+    const formatTime = (datestring) =>{
         const config = {               
             hour: '2-digit', 
             minute: '2-digit', 
-            second: '2-digit'        
-        }        
-        return new Date(datestring).toLocaleTimeString("pt-br",config);        
+            second: '2-digit'
+        }
+        return new Date(datestring).toLocaleTimeString("pt-br",config);     
     }
 
     useEffect(()=>{
@@ -91,13 +90,16 @@ function Calendario() {
                 const response = await Axios.get("http://localhost:3001/listaEventos")
                 .then(function (response){
                     setListaEventos(response.data);
+                    console.log(response)
                 })
             } catch(error){
                 console.error("Erro aos buscar dados:", error)
             }
         }
+        
         fetchData();        
     }, [])
+    
     return (
         <Externo>  
             <CalendCima>
@@ -113,7 +115,7 @@ function Calendario() {
                         (<li>
                             <Link to= {`/evento/${evento.id}`} >                               
                             <Evento>
-                                <ElemEvento>{formatDate(evento.DataEHorario)}</ElemEvento>                                
+                                <ElemEvento>{formatDate(evento.DiaEHora)}</ElemEvento>                                
                                 <ElemEvento>{evento.NomeEvento}</ElemEvento>
                                 <ElemEvento>{evento.LocalEvento}</ElemEvento>
                             </Evento>
