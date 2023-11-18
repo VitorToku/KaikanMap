@@ -28,6 +28,7 @@ margin-top:2rem;
 margin-left:1rem;
 color:#0D33FC;
 font-weight:500;
+font-size:16px;
 
 
 `
@@ -35,6 +36,7 @@ font-weight:500;
 const Imp = styled.h3 `
 margin-top:2rem;
 font-size:36px;
+font-weight:500;
 
 `
 
@@ -60,6 +62,8 @@ const Kaikan = styled.div`
     align-items: center;
     background-color: #DCE6EA;
     padding: 30px;
+    padding-top:60px;
+    padding-bottom:60px;
 
     grid-area: s1;
     

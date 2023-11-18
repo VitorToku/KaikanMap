@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body{
+  font-family: 'Poppins';
+}
+
 body{
   max-width: 1920px;
   min-width: 500px;
   margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
 }
 html {
   --s: 65px; /* control the size */
@@ -303,5 +310,21 @@ font-size: 20px;
 
   
 }  
+
+
+.botao-footer{
+  font-size: 18px;
+    font-weight:500;
+    color: #003785;
+    background-color: #DCE6EA;
+    font-size: 16px;
+    width:200px;
+    height:48px;
+    padding-bottom: 30px;
+    transition: transform 0.2s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
 
   

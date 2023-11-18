@@ -1,6 +1,6 @@
 import { Button } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import style from '../registro/estilo.css'
+import style from '../registro/cxtn.css'
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -10,11 +10,11 @@ function Registro() {
     const handleChangeValues = (value) => {
         setValues((prevValue) => ({
             ...prevValue,
-            [value.target.name]:value.target.value,            
+            [value.target.name]: value.target.value,
         }));
     };
-    const handleClickButton =() =>{
-        axios.post("http://localhost:3001/registro",{
+    const handleClickButton = () => {
+        axios.post("http://localhost:3001/registro", {
             Bairro: values.Bairro,
             CEP: values.CEP,
             Cidade: values.Cidade,
@@ -25,13 +25,13 @@ function Registro() {
             Numero: values.Numero,
             Rua: values.Rua,
             Senha: values.Senha,
-        }).then((response) =>{
+        }).then((response) => {
             console.log(response)
-        })        
+        })
     }
 
     return (
-        
+
 
         <div class="contan">
             <hr id="hrzaoo" />
@@ -40,89 +40,99 @@ function Registro() {
             <div class="components">
                 <div class="name">
                     <p>Nome do Local</p>
-                    <input 
-                    type="text" 
-                    placeholder="Local" 
-                    name="NomeLocal"
-                    required 
-                    onChange={handleChangeValues}/>
+                    <input
+                        type="text"
+                        placeholder="Local"
+                        name="NomeLocal"
+                        required
+                        onChange={handleChangeValues} />
+                </div>
+                <p class="textoo">Endereço</p>
+
+                <div class="enderecao">
+                    <div class="endereco">
+                        
+                        <input type="text"
+                            placeholder="Rua"
+                            required
+                            name="Rua"
+                            class="rua"
+                            onChange={handleChangeValues} />
+
+
+                    </div>
+                   
+                    <div class="numerin">
+                        <p></p>
+                        <input type="text"
+                            placeholder="Numero"
+                            required
+                            name="Numero"
+                            onChange={handleChangeValues} />
+                    </div>
+                    <div class="bairro">
+                        <p></p>
+                        <input type="text"
+                            placeholder="Bairro"
+                            name="Bairro"
+                            required
+                            onChange={handleChangeValues} />
+                    </div>
+                    <div class="cidade">
+                        <p></p>
+                        <input type="text"
+                            placeholder="Cidade"
+                            name="Cidade"
+                            required
+                            onChange={handleChangeValues} />
+                    </div>
+                    <div class="estado">
+                        <p></p>
+                        <input type="text"
+                            placeholder="Estado"
+                            required
+                            name="Estado"
+                            onChange={handleChangeValues} />
+                    </div>
+                    <div class="cep">
+                        <p></p>
+                        <input type="text"
+                            placeholder="CEP"
+                            name="CEP"
+                            required
+                            onChange={handleChangeValues} />
+                    </div>
+
+                </div>
+
+                <div class="descricao">
+                    <p>Descrição</p>
+                    <textarea type="text"
+                        placeholder="Descrição"
+                        name="Descricao"
+                        required
+                        onChange={handleChangeValues} />
                 </div>
                 <div class="name">
                     <p>Email</p>
                     <input type="text"
-                    placeholder="Email"
-                    name="Email"
-                    required 
-                    onChange={handleChangeValues}/>
+                        placeholder="Email"
+                        name="Email"
+                        required
+                        onChange={handleChangeValues} />
                 </div>
                 <div class="name">
                     <p>Senha</p>
-                    <input 
-                    type="text" 
-                    placeholder="Senha" 
-                    name="Senha"
-                    required 
-                    onChange={handleChangeValues}/>
+                    <input
+                        type="text"
+                        placeholder="Senha"
+                        name="Senha"
+                        required
+                        onChange={handleChangeValues} />
                 </div>
-                <div class="endereco">
-                    <p>Rua</p>
-                    <input type="text" 
-                    placeholder="Rua" 
-                    required
-                    name="Rua"
-                    onChange={handleChangeValues} />
-                </div>
-                <div class="endereco">
-                    <p>Numero</p>
-                    <input type="text" 
-                    placeholder="Endereco" 
-                    required 
-                    name="Numero"
-                    onChange={handleChangeValues}/>
-                </div>
-                <div class="endereco">
-                    <p>Bairro</p>
-                    <input type="text" 
-                    placeholder="Endereco" 
-                    name="Bairro"
-                    required 
-                    onChange={handleChangeValues}/>
-                </div>
-                <div class="endereco">
-                    <p>Cidade</p>
-                    <input type="text" 
-                    placeholder="Endereco" 
-                    name="Cidade"
-                    required 
-                    onChange={handleChangeValues}/>
-                </div>
-                <div class="endereco">
-                    <p>Estado</p>
-                    <input type="text"
-                     placeholder="Endereco" 
-                     required 
-                     name="Estado"
-                    onChange={handleChangeValues}/>
-                </div>
-                <div class="endereco">
-                    <p>CEP</p>
-                    <input type="text" 
-                    placeholder="Endereco"
-                    name="CEP"
-                    required 
-                    onChange={handleChangeValues}/>
-                </div>                
-                <div class="Texto">
-                    <p>Descrição</p>
-                    <textarea type="text" 
-                    placeholder="Descrição"
-                    name="Descricao"
-                    required
-                    onChange={handleChangeValues} />
-                </div>                
                 <button onClick={handleClickButton}>ENVIAR</button>
 
-                
+
 
             </div>
 

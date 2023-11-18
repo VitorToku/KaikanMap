@@ -1,9 +1,9 @@
 import styled from 'styled-components'
+import style from '../../style.css'
 
 const StyleContatos = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     width: 20%;
     margin-right: 10%;
 
@@ -11,7 +11,7 @@ const StyleContatos = styled.div`
         display:none;
     }
 `
-const Botao = styled.button`
+const otao = styled.button`
     font-size: 18px;
     font-weight:500;
     color: #003785;
@@ -39,8 +39,8 @@ function Contatos(){
         <StyleContatos>
             <Titulo>NOSSO CONTATO:</Titulo>
             <Link href="#">kaikanmap@gmail.com</Link>
-            <Botao class="botao-footer">KAIKANS &rarr;</Botao>
-            <Botao class="botao-footer">SOBRE NÓS &rarr;</Botao>
+            <button class="botao-footer">KAIKANS </button>
+            <button class="botao-footer">SOBRE NÓS </button>
         </StyleContatos>
     )
 }
