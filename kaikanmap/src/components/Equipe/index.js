@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import style from '../Equipe/vitor.css'
+import style from '../Equipe/vitorr.css'
 import diamante from '../../img/diamante.png'
 import objetivo from '../../img/objetivo.png'
 import fecapimg from '../../img/fecap.png'
@@ -8,7 +8,7 @@ import fecapimg from '../../img/fecap.png'
 function Equipe() {
     return (
 
-        <div class="contain">
+        <div class="containn">
             <section id="s1"></section>
             <main > 
                 <h1 id="tit">EQUIPE</h1>

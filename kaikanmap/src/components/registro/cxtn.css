@@ -11,7 +11,7 @@ body{
 .components{
     background-color: #D9D9D9;
     width: 1283px;
-    height: 1009px;
+    height: 1809px;
     padding: 50px;
     margin-bottom: 200px;
     margin-top: 70px;
@@ -42,8 +42,35 @@ input{
     border: none;
 }
 
-.name, .endereco, .Resumo, .Texto{
+.name, .endereco, .Resumo, .Texto, .numero, .bairro, 
+.cidade, .estado, .cep, .descricao {
     margin-top: 40px;
+}
+
+.enderecao{
+    display: grid;
+    gap:15px;
+    grid-template-columns: 2fr, 2fr, 0.4fr;
+    grid-template-areas: "r r n"
+                         "b c e"
+                         "ce ce ce"
+    ;
+}
+.numerin{grid-area: n; margin-top: 24px;}
+.endereco{grid-area: r; width: 95%;}
+
+
+
+
+.bairro{grid-area: b;}
+.cidade{grid-area: c;}
+.estado{grid-area: e;}
+.cep{grid-area: ce; width: 20%; }
+
+
+.textoo{
+    margin-top: 20px;
+    
 }
 
 textarea{
@@ -80,7 +107,11 @@ button{
  .components{
     width: 900px;
     height: auto;
+    .endereco{grid-area: r; }
+
  }
+
+
     
 }
 @media(max-width:1000px)
@@ -90,6 +121,23 @@ button{
         height: auto;
      }
 
+
+
+     .enderecao{
+        display: grid;
+        gap:15px;
+        grid-template-columns: 2fr, 2fr, 0.4fr;
+        grid-template-areas: "r r r"
+                             "n n n "
+                             "b b b"
+                             "c c c"
+                             "e e e"
+                             "ce ce ce"
+        ;
+    }
+     
+  
+
     
 }
 
@@ -98,6 +146,9 @@ button{
     .components{
         width: 200px;
         height: auto;
+    }
+    .cep{
+        width: 100%;
     }
 
     button{

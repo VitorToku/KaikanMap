@@ -1,4 +1,4 @@
-import './style.css';
+import './jamal.css';
 
 function Registro_evento() {
 

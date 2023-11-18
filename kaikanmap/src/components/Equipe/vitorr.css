@@ -1,7 +1,14 @@
-.contain {
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body{
+  font-family: 'Poppins';
+}
+ 
+
+.containn {
     display: grid;
     
-
+    
     grid-template-columns:  1fr;  
 
     grid-template-areas: 
@@ -16,6 +23,8 @@
     padding-top: 1rem;
     padding-left: 1rem;
   }
+
+
   #s1 {
     grid-area: s1;
     
@@ -30,9 +39,7 @@
   #s3 {
     grid-area: s3;
   }
-.caixas{   
-    border: 1px solid black;    
-}
+
 
 #s2{
     display: grid;
@@ -70,18 +77,22 @@
     color:#003785;
     font-size: 56px;
 }
+
 #hrzao{
 width: 20%;
 }
 #call{
-font-weight: 500;
-font-size: 36px;
+font-weight: 00;
+font-size: 55px;
 }
 #fala{
 font-size: 16px;
 padding-top: 100px;
 font-weight: 400;
 padding-bottom:80px;
+}
+#objText{
+  color: #003785;
 }
 
 #s3{
@@ -147,7 +158,12 @@ padding-bottom:80px;
     font-weight: 500;
   
   }
-  
+  #sep{
+    color: #2196F3;
+    width: 70%;
+    border-top: 4px solid;
+
+  }
   
   
   #destaq{
@@ -200,7 +216,7 @@ padding-bottom:80px;
     width: 300px;
   }
 
-  #sep{
+  #sepp{
     width: 40%;
   }
   
@@ -231,4 +247,5 @@ padding-bottom:80px;
     }
 
 }
+
 
