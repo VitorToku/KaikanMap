@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import style from '../../style.css'
 
 const StyleContatos = styled.div`
     display: flex;
@@ -39,8 +38,8 @@ function Contatos(){
         <StyleContatos>
             <Titulo>NOSSO CONTATO:</Titulo>
             <Link href="#">kaikanmap@gmail.com</Link>
-            <button class="botao-footer">KAIKANS </button>
-            <button class="botao-footer">SOBRE NÓS </button>
+            <button className="botao-footer">KAIKANS </button>
+            <button className="botao-footer">SOBRE NÓS </button>
         </StyleContatos>
     )
 }
