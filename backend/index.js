@@ -59,11 +59,27 @@ app.post("/registro", (req,res) =>{
     const Imagem = "../../img/kaikan_cipo.png"
 
     const q = "insert into listakaikans(NomeKaikan,Rua,Numero,Bairro,Cidade,Estado,CEP,DescricaoCompleta,imagem,Email,Senha) values (?,?,?,?,?,?,?,?,?,?,?);"
-    db.query(q, [NomeLocal,Rua,Numero,Bairro,Cidade,Estado,CEP,Descricao,Imagem,Email,Senha],(err,result)=>{
+    db.query( q, [NomeLocal,Rua,Numero,Bairro,Cidade,Estado,CEP,Descricao,Imagem,Email,Senha],(err,result)=>{
         console.log(err)
     })
 })
 
+app.post("/registroEvento", (req,res) =>{
+    const {NomeEvento} = req.body;
+    const {LocalEvento} = req.body;
+    const imagem = "../../img/kaikan_cipo.png";
+    const {Descricao} = req.body;
+    const {Data} = req.body;
+    const {Hora} = req.body;
+    const {KaikanResponsavel} = req.body;
+    const DiaEHora = Data + " " + Hora + ":00";
+
+
+    const q = "insert into eventos(NomeEvento,LocalEvento,KaikanResponsavel,imagem,Descricao,DiaEHora) values(?,?,?,?,?,?)"
+    db.query( q, [NomeEvento,LocalEvento,KaikanResponsavel,imagem,Descricao,DiaEHora],(err,result)=>{
+        console.log(err)
+    })
+})
 
 app.listen(3001, () =>{
     console.log("Rodando Servidor")

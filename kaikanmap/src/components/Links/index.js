@@ -36,7 +36,7 @@ const Referencia = styled.a`
 function Links(){
     return(
         <StyleLinks>
-            <Titulo class="titulos">LINKS</Titulo>
+            <Titulo className="titulos">LINKS</Titulo>
             <StyleLista>
                 <Opcoes><Referencia href='#'>A EQUIPE</Referencia></Opcoes>
                 <Opcoes><Referencia href='#'>LISTA DE KAIKANS</Referencia></Opcoes>
