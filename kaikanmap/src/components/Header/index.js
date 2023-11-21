@@ -94,8 +94,8 @@ function Header() {
                 <a class="nav-link gira" href=""><Link to="/calendario">CALENDÁRIO</Link></a>
               </li>              
             </ul>    
-            <Botao>LOGIN</Botao>
-            <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>           
+            <button id ="botaozin">LOGIN</button>
+            <Link to = "/registro"><button id="botaozin">REGISTRE-SE</button> </Link>           
           </div>
         </div>
       </nav>      

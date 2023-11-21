@@ -28,6 +28,7 @@ const Referencia = styled.a`
     text-decoration: none;
     color: black;
     &:hover {
+       transition:0.3s;
         text-decoration:underline;
     }
 

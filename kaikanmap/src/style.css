@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-body{
-  font-family: 'Poppins';
-}
+
 
 body{
   max-width: 1920px;
   min-width: 500px;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
 }
 html {
   --s: 65px; /* control the size */
@@ -312,19 +309,22 @@ font-size: 20px;
 }  
 
 
-.botao-footer{
+.butao-footer{
   font-size: 18px;
     font-weight:500;
-    color: #003785;
-    background-color: #DCE6EA;
+    margin-bottom: 10px;
+    color:#DCE6EA;
+    background-color: #003785;
     font-size: 16px;
     width:200px;
-    height:48px;
-    padding-bottom: 30px;
+    height:60px;
+    
     transition: transform 0.2s;
     &:hover {
+      transition: 0.3s;
         transform: scale(1.2);
     }
 }
+
 
   

@@ -42,9 +42,11 @@ input{
     border: none;
 }
 
+
 .name, .endereco, .Resumo, .Texto, .numero, .bairro, 
 .cidade, .estado, .cep, .descricao {
     margin-top: 40px;
+    
 }
 
 .enderecao{
@@ -79,6 +81,24 @@ textarea{
     background-color: #DCE6EA;
     border: none;
 }
+.img{
+    width: 150px;
+   
+    color: #D9D9D9;
+    background-color:#D9D9D9  !important;
+    margin-bottom: 30px;
+}
+.Img{
+    border: none;
+    background-color: #D9D9D9;
+    width: 180px;
+    
+}
+
+.Img:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
 
 
 #hrzaoo{
@@ -90,7 +110,7 @@ textarea{
 }
 
 
-button{
+#envie{
     margin-top: 50px;
    padding: 25px 50px;
    border: none;
@@ -98,7 +118,14 @@ button{
    
    background-color: #003785;
    color: white;
+
    
+   
+}
+
+#envie:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
 }
 
 

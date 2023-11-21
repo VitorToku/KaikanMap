@@ -11,7 +11,7 @@ const StyleContatos = styled.div`
         display:none;
     }
 `
-const otao = styled.button`
+const Otao = styled.button`
     font-size: 18px;
     font-weight:500;
     color: #003785;
@@ -39,8 +39,8 @@ function Contatos(){
         <StyleContatos>
             <Titulo>NOSSO CONTATO:</Titulo>
             <Link href="#">kaikanmap@gmail.com</Link>
-            <button class="botao-footer">KAIKANS </button>
-            <button class="botao-footer">SOBRE NÓS </button>
+            <button class="butao-footer">KAIKANS </button>
+            <button class="butao-footer">SOBRE NÓS </button>
         </StyleContatos>
     )
 }

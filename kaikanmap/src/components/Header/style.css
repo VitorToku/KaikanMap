@@ -6,3 +6,23 @@
 .gira:hover{
     transform: scale(1.1);
 }
+
+
+#botaozin{
+    padding: 15px 15px;
+    background-color: #003785;
+    border: none;
+    color: #DCE6EA; 
+    margin: 0 10px;
+    transition: transform 0.4s;
+    &:hover{
+      transform:scale(1.2);
+    }
+  
+    @media(max-width: 992px){
+      min-width: 200px;
+      display:block;
+      width: 20%;
+      margin: 10px 0px;
+    }
+}
