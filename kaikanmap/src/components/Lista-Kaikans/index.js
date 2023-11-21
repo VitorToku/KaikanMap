@@ -62,8 +62,8 @@ function ListaDeKaikans(){
                 <Externo className="overflow-auto">
                 <Lista>
                     {listaKaikans?.map((Item) =>              
-                        (<Kaikan>
-                            <Interno key={Item.id}>
+                        (<Kaikan key={Item.id}>
+                            <Interno>
                             <a  href="# ">{Item.Nomekaikan}</a>                            
                             {Item.DescricaoCompleta}
                             </Interno>

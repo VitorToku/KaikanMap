@@ -1,11 +1,13 @@
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import HomePage from '../../components/home';
+import React,{useState} from 'react'
 
-function Home(){
+function Home(props){   
+
     return(
         <>   
-            <Header/>
+            <Header isLoggedIn ={props.LoggedIn}/>
             <HomePage/>
             <Footer/>
         </> 

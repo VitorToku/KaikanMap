@@ -3,10 +3,10 @@ import Header from '../../components/Header'
 import DescEvento from '../../components/evento'
 
 
-function Evento(){
+function Evento(props){
     return(
         <>
-        <Header/>
+        <Header isLoggedIn ={props.LoggedIn}/>
         <DescEvento/>
         <Footer/>        
         </>

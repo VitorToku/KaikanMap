@@ -2,10 +2,10 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import NomedoKaikanComp from '../../components/NomedoKaikan'
 
-function NomedoKaikan(){
+function NomedoKaikan(props){
     return(
         <>   
-            <Header/>
+            <Header isLoggedIn ={props.LoggedIn}/>
             <NomedoKaikanComp/>
             <Footer/>
         </> 
