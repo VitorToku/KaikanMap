@@ -91,17 +91,7 @@ a{
     margin-top: 20px;
   }
 
-  .button{
-  border-radius: 0px;
-  padding: 12px;
-  padding-left: 15px;
-  padding-right: 20 px;
-  margin-left: 10px;
-  background-color: #003785;
-  color: #DCE6EA;
   
-
-  }
   .btn-register{
     width: 200px;
     padding-top: 20px;
@@ -315,14 +305,16 @@ font-size: 20px;
 .botao-footer{
   font-size: 18px;
     font-weight:500;
-    color: #003785;
-    background-color: #DCE6EA;
+    color: #DCE6EA;
+    background-color: #003785;
     font-size: 16px;
     width:200px;
-    height:48px;
-    padding-bottom: 30px;
+    height:70px;
+    margin-bottom: 10px;
+    
     transition: transform 0.2s;
     &:hover {
+        transition: 0.3s;
         transform: scale(1.2);
     }
 }

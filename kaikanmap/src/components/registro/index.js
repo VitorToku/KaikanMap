@@ -130,7 +130,20 @@ function Registro() {
                         required
                         onChange={handleChangeValues} />
                 </div>
-                <button onClick={handleClickButton}>ENVIAR</button>
+                
+                <div className="name">
+                    <p>Imagem</p>
+                    <input
+                        type="file"
+                        placeholder="Imagem"
+                        name="Img"
+                        required
+                        class="typefile"
+                        onChange={handleChangeValues} />
+                </div>
+
+
+                <button onClick={handleClickButton} class="envie">ENVIAR</button>
 
 
 
