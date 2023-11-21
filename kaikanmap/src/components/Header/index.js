@@ -4,6 +4,8 @@ import styled, { ThemeConsumer, ThemeContext } from 'styled-components'
 import {Link} from 'react-router-dom'
 import {useState,useContext } from 'react'
 import { EstaLogado } from '../../context/LogadoContext'
+import Popup, {CloseButton, PopupContent, PopupContainer} from '../../components/popup';
+import Axios from 'axios'
 
 
 // const Lista = styled.ul
@@ -71,8 +73,13 @@ const Barra = styled.div`
     display:none
   }
 `
+
 function Header(props){  
-    const {logado, logar} = useContext(EstaLogado)
+    const {logado, logar,popupAberto, abrirPopup} = useContext(EstaLogado);
+    
+    const [aparecePopup, setAparecePopup] = useState(false);
+
+
     return(            
     <>      
       <nav className="navbar navbar-expand-lg minhacor">
@@ -98,7 +105,7 @@ function Header(props){
 
             {logado ? (
               <>
-                <Botao onClick={logar}>LOGIN</Botao>
+                <Botao onClick={abrirPopup}>LOGIN</Botao>
                 <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>  
               </>
             ) : (
@@ -111,7 +118,7 @@ function Header(props){
           </div>
         </div>
       </nav>   
-        
+      <Popup show={popupAberto}></Popup>
     </>
   )
 } 

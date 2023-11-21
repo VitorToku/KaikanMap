@@ -12,7 +12,7 @@ function Equipee(props)
 {
     return(
         <>
-        <Header isLoggedIn ={props.LoggedIn}/>
+        <Header/>
         <Equipe/>
         <Footer/>
         </>

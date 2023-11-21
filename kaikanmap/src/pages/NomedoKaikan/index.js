@@ -5,7 +5,7 @@ import NomedoKaikanComp from '../../components/NomedoKaikan'
 function NomedoKaikan(props){
     return(
         <>   
-            <Header isLoggedIn ={props.LoggedIn}/>
+            <Header/>
             <NomedoKaikanComp/>
             <Footer/>
         </> 
