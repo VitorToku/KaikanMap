@@ -33,12 +33,12 @@ function Registro() {
     return (
 
 
-        <div class="contan">
+        <div className="contan">
             <hr id="hrzaoo" />
             <h1>REGISTRO</h1>
 
-            <div class="components">
-                <div class="name">
+            <div className="components">
+                <div className="name">
                     <p>Nome do Local</p>
                     <input
                         type="text"
@@ -47,22 +47,22 @@ function Registro() {
                         required
                         onChange={handleChangeValues} />
                 </div>
-                <p class="textoo">Endereço</p>
+                <p className="textoo">Endereço</p>
 
-                <div class="enderecao">
-                    <div class="endereco">
+                <div className="enderecao">
+                    <div className="endereco">
                         
                         <input type="text"
                             placeholder="Rua"
                             required
                             name="Rua"
-                            class="rua"
+                            className="rua"
                             onChange={handleChangeValues} />
 
 
                     </div>
                    
-                    <div class="numerin">
+                    <div className="numerin">
                         <p></p>
                         <input type="text"
                             placeholder="Numero"
@@ -70,7 +70,7 @@ function Registro() {
                             name="Numero"
                             onChange={handleChangeValues} />
                     </div>
-                    <div class="bairro">
+                    <div className="bairro">
                         <p></p>
                         <input type="text"
                             placeholder="Bairro"
@@ -78,7 +78,7 @@ function Registro() {
                             required
                             onChange={handleChangeValues} />
                     </div>
-                    <div class="cidade">
+                    <div className="cidade">
                         <p></p>
                         <input type="text"
                             placeholder="Cidade"
@@ -86,7 +86,7 @@ function Registro() {
                             required
                             onChange={handleChangeValues} />
                     </div>
-                    <div class="estado">
+                    <div className="estado">
                         <p></p>
                         <input type="text"
                             placeholder="Estado"
@@ -94,7 +94,7 @@ function Registro() {
                             name="Estado"
                             onChange={handleChangeValues} />
                     </div>
-                    <div class="cep">
+                    <div className="cep">
                         <p></p>
                         <input type="text"
                             placeholder="CEP"
@@ -105,7 +105,7 @@ function Registro() {
 
                 </div>
 
-                <div class="descricao">
+                <div className="descricao">
                     <p>Descrição</p>
                     <textarea type="text"
                         placeholder="Descrição"
@@ -113,7 +113,7 @@ function Registro() {
                         required
                         onChange={handleChangeValues} />
                 </div>
-                <div class="name">
+                <div className="name">
                     <p>Email</p>
                     <input type="text"
                         placeholder="Email"
@@ -121,7 +121,7 @@ function Registro() {
                         required
                         onChange={handleChangeValues} />
                 </div>
-                <div class="name">
+                <div className="name">
                     <p>Senha</p>
                     <input
                         type="text"

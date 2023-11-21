@@ -8,11 +8,11 @@ import Footer from '../../components/Footer'
 
 
 
-function Equipee()
+function Equipee(props)
 {
     return(
         <>
-        <Header/>
+        <Header isLoggedIn ={props.LoggedIn}/>
         <Equipe/>
         <Footer/>
         </>

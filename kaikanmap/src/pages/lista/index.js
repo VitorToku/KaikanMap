@@ -4,10 +4,10 @@ import Footer from '../../components/Footer'
 import Lista from '../../components/Lista-Kaikans'
 
 
-function ListaKaikan(){
+function ListaKaikan(props){
     return(
         <>
-        <Header/>
+        <Header isLoggedIn ={props.LoggedIn}/>
         <Lista/>
         <Footer/>
         </>

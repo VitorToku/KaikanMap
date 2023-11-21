@@ -2,11 +2,11 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Registro from '../../components/registro'
 
-function RegistroK(){
+function RegistroK(props){
 
     return(
        <>
-       <Header/>
+       <Header isLoggedIn ={props.LoggedIn}/>
        <Registro/>
        <Footer/>
        

@@ -27,6 +27,7 @@ const FundoLista = styled.ul`
     padding: 25px;
     margin: 10px 200px;
     max-height: 600px;
+    border: 5px solid rgba(0,55,133,1);
     @media(max-width:768px){
         margin: 10px 50px;
     }
@@ -105,7 +106,7 @@ function Calendario() {
         <Externo>  
             <CalendCima>
                 <h1>Calendario de Eventos</h1>        
-                <Imagem src={ImgCalendario} />
+                {/* <Imagem src={ImgCalendario} /> */}
             </CalendCima>
             <Filtro>Filtros</Filtro>
             <FundoLista className='overflow-auto'>                
@@ -113,7 +114,7 @@ function Calendario() {
                     <ListaEventos>
                         
                         {listaEventos?.map((evento)=>
-                        (<li>
+                        (<li key={evento.id}>
                             <Link to= {`/evento/${evento.id}`} >                               
                             <Evento>
                                 <ElemEvento>{formatDate(evento.DiaEHora)}</ElemEvento>                                

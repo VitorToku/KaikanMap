@@ -1,53 +1,53 @@
 import Logo from '../../img/logo.svg'
 
-import styled from 'styled-components'
+import styled, { ThemeConsumer, ThemeContext } from 'styled-components'
 import {Link} from 'react-router-dom'
-import style from '../Header/style.css'
+import {useState,useContext } from 'react'
+import { EstaLogado } from '../../context/LogadoContext'
 
-const pags = ["A EQUIPE", "LISTA DE KAIKANS", "CALENDÁRIO"]
 
-const Lista = styled.ul
-  `
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    margin: 0;
-`
-const StyleHeader = styled.div`
-  display: flex;
-  align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
-  background-color: #DCE6EA;  
-  padding: 0 15px;
-`
-const Menu = styled.div`
-  display: flex;
-  gap: 15px;
-  margin-left: auto;
-  @media(max-width: 992px){
-    display:none;
-  }
-`
-const BotaoMenu = styled.button`
-  font-size: 2rem;
-  margin-left: auto;
-  border: solid 1px black;
-  display: none;
-  @media(max-width: 992px){
-    display: inline-block;
-  }
-`
+// const Lista = styled.ul
+//   `
+//     display: flex;
+//     list-style: none;
+//     gap: 1rem;
+//     margin: 0;
+// `
+// const StyleHeader = styled.div`
+//   display: flex;
+//   align-items: center;
+//   max-width: 1440px;
+//   margin: 0 auto;
+//   background-color: #DCE6EA;  
+//   padding: 0 15px;
+// `
+// const Menu = styled.div`
+//   display: flex;
+//   gap: 15px;
+//   margin-left: auto;
+//   @media(max-width: 992px){
+//     display:none;
+//   }
+// `
+// const BotaoMenu = styled.button`
+//   font-size: 2rem;
+//   margin-left: auto;
+//   border: solid 1px black;
+//   display: none;
+//   @media(max-width: 992px){
+//     display: inline-block;
+//   }
+// `
 
-const Links = styled.div`
-  display: flex;
-  align-items: center;
+// const Links = styled.div`
+//   display: flex;
+//   align-items: center;
   
-`
-const Itens = styled.li`
-  font-size: 1rem;
-  color: #003785;
-`
+// `
+// const Itens = styled.li`
+//   font-size: 1rem;
+//   color: #003785;
+// `
 const Botao = styled.button` 
   padding: 15px 15px;
   background-color: #003785;
@@ -71,12 +71,13 @@ const Barra = styled.div`
     display:none
   }
 `
-function Header() {
+function Header(props){  
+    const {logado, logar} = useContext(EstaLogado)
     return(            
-    <>
+    <>      
       <nav className="navbar navbar-expand-lg minhacor">
         <div className="container-fluid">
-          <Link to="/"><img className="navbar-brand" src={Logo} /></Link>
+          <Link to="/"><img className="navbar-brand" src={Logo} alt=''/></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -93,12 +94,24 @@ function Header() {
               <li className="nav-item">
                 <Link className="nav-link gira" to="/calendario">CALENDÁRIO</Link>
               </li>              
-            </ul>    
-            <Botao>LOGIN</Botao>
-            <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>           
+            </ul>
+
+            {logado ? (
+              <>
+                <Botao onClick={logar}>LOGIN</Botao>
+                <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>  
+              </>
+            ) : (
+                <>
+                <Botao onClick={logar}>Deslogar</Botao>
+                <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>  
+                </>
+            )    
+            }
           </div>
         </div>
-      </nav>      
+      </nav>   
+        
     </>
   )
 } 

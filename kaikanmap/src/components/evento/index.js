@@ -57,8 +57,7 @@ function DescEvento(){
         const config = {
             year: 'numeric', 
             month: '2-digit',
-            day: '2-digit'
-                    
+            day: '2-digit'                    
         }        
         return new Date(datestring).toLocaleDateString("pt-br",config);        
     }
@@ -70,7 +69,6 @@ function DescEvento(){
         }        
         return new Date(datestring).toLocaleTimeString("pt-br",config);        
     }
-    
     
     useEffect(()=>{
         const fetchData = async () =>{
