@@ -6,7 +6,7 @@ import DescEvento from '../../components/evento'
 function Evento(props){
     return(
         <>
-        <Header isLoggedIn ={props.LoggedIn}/>
+        <Header/>
         <DescEvento/>
         <Footer/>        
         </>

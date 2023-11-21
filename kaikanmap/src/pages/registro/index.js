@@ -6,7 +6,7 @@ function RegistroK(props){
 
     return(
        <>
-       <Header isLoggedIn ={props.LoggedIn}/>
+       <Header/>
        <Registro/>
        <Footer/>
        

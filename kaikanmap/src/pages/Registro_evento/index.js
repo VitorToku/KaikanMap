@@ -5,7 +5,7 @@ import Registro_evento from '../../components/Registro_evento'
 function Registro_eventoo(props){
     return(
         <>   
-            <Header isLoggedIn ={props.LoggedIn}/>
+            <Header/>
             <Registro_evento/>
             <Footer/>
         </> 

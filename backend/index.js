@@ -10,7 +10,7 @@ const db = mysql.createConnection({
     host:"localhost",
     user: "root",    
     database:"kaikanmap",
-    password:"testecrud1234"
+    password:""
 });
 
 
@@ -78,6 +78,19 @@ app.post("/registroEvento", (req,res) =>{
     const q = "insert into eventos(NomeEvento,LocalEvento,KaikanResponsavel,imagem,Descricao,DiaEHora) values(?,?,?,?,?,?)"
     db.query( q, [NomeEvento,LocalEvento,KaikanResponsavel,imagem,Descricao,DiaEHora],(err,result)=>{
         console.log(err)
+    })
+})
+
+app.post("/login",(req,res)=>{
+    const {Email} = req.body;
+    const {Senha} = req.body;
+    
+    console.log(Email)
+    console.log(Senha)
+
+    const q = "select Senha from listakaikans where Email = ?"
+    db.query(q, [Email],(err,result)=>{   
+        if(result[0].Senha == Senha){res.send({Sucesso: true})}         
     })
 })
 

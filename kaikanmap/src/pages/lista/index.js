@@ -7,7 +7,7 @@ import Lista from '../../components/Lista-Kaikans'
 function ListaKaikan(props){
     return(
         <>
-        <Header isLoggedIn ={props.LoggedIn}/>
+        <Header/>
         <Lista/>
         <Footer/>
         </>

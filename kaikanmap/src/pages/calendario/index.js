@@ -5,7 +5,7 @@ import Footer from '../../components/Footer'
 function CalendarioKaikan(props){
     return(
         <>
-        <Header isLoggedIn ={props.LoggedIn}/>
+        <Header/>
         <Calendario/>
         <Footer/>
         </>
