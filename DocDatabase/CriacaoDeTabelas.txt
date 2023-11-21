@@ -1,0 +1,27 @@
+create database kaikanmap;
+use kaikanmap;
+create table listakaikans(
+	id int primary key auto_increment,
+    NomeKaikan varchar(50) not null,
+    Rua varchar(50) not null,
+    Numero varchar(50) not null,
+    Bairro varchar(50) not null,
+    Cidade varchar(50) not null,
+    Estado varchar(50) not null,
+    CEP varchar(50) not null,
+    DescricaoCompleta varchar(500) not null,
+    imagem varchar(50) not null,
+    Email varchar(50) not null,
+    Senha varchar(50) not null
+);
+create table eventos(
+	id int primary key auto_increment,
+    NomeEvento varchar(50) not null,
+    LocalEvento varchar(50) not null,
+    KaikanResponsavel int,
+    imagem varchar(50) not null,
+    Descricao varchar(500) not null,
+    DiaEHora timestamp not null,
+    constraint FKKaikan foreign key (KaikanResponsavel)
+    references listakaikans(id)
+);
