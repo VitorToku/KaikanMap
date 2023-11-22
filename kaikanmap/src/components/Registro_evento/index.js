@@ -121,7 +121,7 @@ function Registro_evento() {
           name='imagem'
           onChange={handleChangeValues} />
         </div>
-        <button  className='aaa' onClick={handleClickButton}>
+        <button  className='button' onClick={handleClickButton}>
           ENVIAR
         </button>
       </div>
