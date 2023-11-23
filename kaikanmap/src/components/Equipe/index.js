@@ -22,22 +22,25 @@ function Equipe() {
                 <section id="c1" className="caixas">
                     <div class="img">
                         <img class="vit" src={vitor} />
-
                     </div>
-                    <div class="text"> </div>
+                    <section id="separarhr">  <hr class="superhr" /> </section>
+
+                    <div class="nomee"> <h1 class="nomepro"> Vitor Hideki Tokunaga, 23 anos </h1> </div>
                 </section>
                 <section id="c2" className="caixas">
                     <div class="img" >
                         <img class="gab" src={gabriel} />
                     </div>
-                    <div class="text"> </div>
+                    <section id="separarhr">  <hr class="superhr" /> </section>
+                    <div class="nomee"> <h1 class="nomepro"> Gabriel Coutinho Cezar, 19 anos </h1> </div>
                 </section>
                 <section id="c3" className="caixas">
-                    <div class="img" >        
-                    
-                       <img class="jam" src={jasmani} />
+                    <div class="img" >
+
+                        <img class="jam" src={jasmani} />
                     </div>
-                    <div class="text"> </div>
+                    <section id="separarhr">  <hr class="superhr" /> </section>
+                    <div class="nomee"> <h1 class="nomepro jamalnome"> Jasmani Rudy Arcaya Susano, 22 anos </h1> </div>
                 </section>
             </section>
             <section id="s3">
