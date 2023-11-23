@@ -4,7 +4,8 @@ import diamante from '../../img/diamante.png'
 import objetivo from '../../img/objetivo.png'
 import fecapimg from '../../img/fecap.png'
 import vitor from '../../img/vitor.jpg'
-import gabriel from '../../img/gabriel.jpeg'
+import gabriel from '../../img/gabriel.jpg'
+import jasmani from '../../img/jasmani.jpg'
 
 function Equipe() {
     return (
@@ -26,13 +27,16 @@ function Equipe() {
                     <div class="text"> </div>
                 </section>
                 <section id="c2" className="caixas">
-                    <div class="img" >       
+                    <div class="img" >
                         <img class="gab" src={gabriel} />
                     </div>
                     <div class="text"> </div>
                 </section>
                 <section id="c3" className="caixas">
-                    <div class="img" ></div>
+                    <div class="img" >        
+                    
+                       <img class="jam" src={jasmani} />
+                    </div>
                     <div class="text"> </div>
                 </section>
             </section>

@@ -59,6 +59,7 @@
 
   #c1, #c2, #c3{
     border-radius: 15%;
+    justify-self: center;
   }
 #c1{
     grid-area: c1;
@@ -84,15 +85,24 @@
 }
 
 .vit{
-  transform: scale(0.8);
+
+  width: 260px;
   border-radius: 100%;
 }
   
 .gab{
-  transform: scale(0.35);
+  width: 260px;
   border-radius: 100%;
 
 }
+
+.jam{
+  width: 260px;
+  height: 300px;
+  border-radius: 100%;
+
+}
+
 
 #hrzao{
 width: 20%;
