@@ -3,7 +3,8 @@ import style from '../Equipe/vitorr.css'
 import diamante from '../../img/diamante.png'
 import objetivo from '../../img/objetivo.png'
 import fecapimg from '../../img/fecap.png'
-
+import vitor from '../../img/vitor.jpg'
+import gabriel from '../../img/gabriel.jpeg'
 
 function Equipe() {
     return (
@@ -19,13 +20,15 @@ function Equipe() {
             <section id="s2">
                 <section id="c1" className="caixas">
                     <div class="img">
-                    
+                        <img class="vit" src={vitor} />
 
                     </div>
                     <div class="text"> </div>
                 </section>
                 <section id="c2" className="caixas">
-                    <div class="img" ></div>
+                    <div class="img" >       
+                        <img class="gab" src={gabriel} />
+                    </div>
                     <div class="text"> </div>
                 </section>
                 <section id="c3" className="caixas">

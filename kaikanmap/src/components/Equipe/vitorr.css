@@ -55,7 +55,7 @@
                          
                       ;
   }
-
+ 
 
   #c1, #c2, #c3{
     border-radius: 15%;
@@ -81,6 +81,17 @@
 #tit{
     color:#003785;
     font-size: 56px;
+}
+
+.vit{
+  transform: scale(0.8);
+  border-radius: 100%;
+}
+  
+.gab{
+  transform: scale(0.35);
+  border-radius: 100%;
+
 }
 
 #hrzao{
