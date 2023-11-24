@@ -326,3 +326,6 @@ font-size: 20px;
 .FundoCarDesc{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
+.descEvento{
+  padding-left: 48px;
+}

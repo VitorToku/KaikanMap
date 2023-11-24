@@ -25,6 +25,7 @@ const Card = styled.div`
 const Tudo = styled.div`
     display: grid;
     justify-content: center;
+    padding: 0 48px;
 `
 const Texto = styled.div`
     padding: 16px;

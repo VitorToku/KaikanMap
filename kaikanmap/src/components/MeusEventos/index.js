@@ -6,11 +6,14 @@ import { Link } from "react-router-dom";
 
 const Tudo = styled.div`
 display: grid;
+padding: 24px 48px;
 `
 const Evento = styled.div`
     background-color: #DCE6EA;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: 50px;
 `
 const Lista = styled.ul`
     list-style: none;
@@ -28,6 +31,13 @@ const Botao = styled.button`
     width: 200px;
     height: 80px;
     justify-self: end;
+    background-color: #003785;
+    color: #DCE6EA; 
+    border-radius: 50px;
+    transition: transform 0.4s;
+        &:hover{
+            transform:scale(1.2);
+  }
 `
 
 function MeusEventos(){   
@@ -78,8 +88,7 @@ function MeusEventos(){
                         <Evento>
                             <ElemeEvento>{eventos.NomeEvento}</ElemeEvento>
                             <ElemeEvento>{eventos.LocalEvento}</ElemeEvento>
-                            <ElemeEvento>{formatDate(eventos.DiaEHora)}  {formatTime(eventos.DiaEHora)}</ElemeEvento>
-                            <ElemeEvento><Link to={`/editar/${eventos.id}`}>Editar</Link></ElemeEvento>
+                            <ElemeEvento>{formatDate(eventos.DiaEHora)}  {formatTime(eventos.DiaEHora)}</ElemeEvento>                            
                         </Evento>
                     </Item>
                 ))}                

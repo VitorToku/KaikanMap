@@ -4,8 +4,8 @@ import diamante from '../../img/diamante.png'
 import objetivo from '../../img/objetivo.png'
 import fecapimg from '../../img/fecap.png'
 import vitor from '../../img/vitor.jpg'
-import gabriel from '../../img/gabriel.jpg'
-import jasmani from '../../img/jasmani.jpg'
+import gabriel from '../../img/gabriel2.jpg'
+import jasmani from '../../img/jasmani2.jpg'
 
 function Equipe() {
     return (
@@ -19,28 +19,27 @@ function Equipe() {
                 <h3 id="fala">Nossa gestão de pessoas segue à risca o princípio de primor pelo ser humano e, por <br /> isso, trabalhamos com liberdade e responsabilidade, focando no desenvolvimento de <br /> cada colaborador.</h3>
             </main>
             <section id="s2">
-                <section id="c1" className="caixas">
-                    <div class="img">
-                        <img class="vit" src={vitor} />
-                    </div>
-                    <section id="separarhr">  <hr class="superhr" /> </section>
-
-                    <div class="nomee"> <h1 class="nomepro"> Vitor Hideki Tokunaga, 23 anos </h1> </div>
+                <section id="c1" className="caixas">                    
+                    <img className='Perfil'src={vitor} />                    
+                    <div class="text">Vitor Tokunaga, 23</div>
+                    <a className="linkIcon" target="_blank" href="https://github.com/VitorToku"><i class="bi bi-github icon"/></a>
+                    <a className="linkIcon" target="_blank" href="https://www.instagram.com/vhtoku/"><i class="bi bi-instagram icon"></i></a>
+                    <a className="linkIcon" target="_blank" href="https://www.linkedin.com/in/vitor-tokunaga-82b344278/"><i class="bi bi-linkedin icon"></i></a>
                 </section>
-                <section id="c2" className="caixas">
-                    <div class="img" >
-                        <img class="gab" src={gabriel} />
-                    </div>
-                    <section id="separarhr">  <hr class="superhr" /> </section>
-                    <div class="nomee"> <h1 class="nomepro"> Gabriel Coutinho Cezar, 19 anos </h1> </div>
-                </section>
-                <section id="c3" className="caixas">
-                    <div class="img" >
+                <section id="c2" className="caixas">                    
+                    <img className='Perfil' src={gabriel} />                    
+                    <div class="text">Gabriel Coutinho, 18 </div>
 
-                        <img class="jam" src={jasmani} />
-                    </div>
-                    <section id="separarhr">  <hr class="superhr" /> </section>
-                    <div class="nomee"> <h1 class="nomepro jamalnome"> Jasmani Rudy Arcaya Susano, 22 anos </h1> </div>
+                    <a className="linkIcon" target="_blank" href="https://github.com/coutinhogit"><i class="bi bi-github icon"/></a>
+                    <a className="linkIcon" target="_blank" href="#"><i class="bi bi-instagram icon"></i></a>
+                    <a className="linkIcon" target="_blank" href="https://www.linkedin.com/in/gabriel-coutinho-cezar-b2b8821b7/"><i class="bi bi-linkedin icon"></i></a>
+                </section>
+                <section id="c3" className="caixas">                                       
+                    <img className='Perfil' src={jasmani} />                    
+                    <div class="text">Jasmani Rudy, 21 </div>
+                    <a className="linkIcon" target="_blank" href="https://github.com/110320011"><i class="bi bi-github icon"/></a>
+                    <a className="linkIcon" target="_blank" href="#"><i class="bi bi-instagram icon"></i></a>
+                    <a className="linkIcon" target="_blank" href="#"><i class="bi bi-linkedin icon"></i></a>
                 </section>
             </section>
             <section id="s3">

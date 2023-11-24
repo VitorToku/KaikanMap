@@ -67,11 +67,8 @@
 
 }
 .Titulo{
-    padding: 16px 32px;
-    margin: 0;
-}
-.Fundo{
-    background-color: #ECEFF2;
+    padding: 0;
+    margin: 16px 48px;
 }
 .material-symbols-outlined {
   vertical-align: middle;

@@ -21,8 +21,9 @@
 
   main{
     background-color: #DCE6EA;
-    padding-top: 2rem;
-    padding-left: 8rem;
+    padding-top: 1rem;
+    padding-left: 48px;
+
   }
 
 
@@ -56,24 +57,47 @@
                       ;
   }
  
+  .Perfil{
+    border-radius: 50%;
+    padding: 16px;
+  } 
+  .text{
+    width: 99%;
+  }
+  .icon{
+    font-size: 30px;
+    margin: 0 10px;
+  }
 
- 
+.linkIcon{
+  transition: transform 0.3s ease-in-out;
+}
+.linkIcon:hover{
+  color: blue;
+  transform: scale(1.2);
+}
+  #c1, #c2, #c3{
+    border-radius: 15%;
+    justify-self: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 350px;
+  }
 #c1{
     grid-area: c1;
     background-color:#DCE6EA;
-    width: 100%;
     height: 500px;
+    
 }
 #c2{
     background-color:#DCE6EA;
     grid-area:c2;
-    width: 100%;
     height: 500px;
 }
 #c3{
     background-color:#DCE6EA;
     grid-area:c3;
-    width: 100%;
     height: 500px;    
 }
 
@@ -85,6 +109,7 @@
 #tit{
     color:#003785;
     font-size: 56px;
+    
 }
 
 .img{
@@ -92,8 +117,7 @@
 }
 
 .vit{
-
-  width: 220px;
+  width: 260px;
   border-radius: 100%;
 }
   
@@ -144,8 +168,7 @@ padding-bottom:80px;
   color: #003785;
 }
 
-#s3{
-    
+#s3{    
     padding-top: 38px;
     background-color: #DCE6EA;
     display: grid;
@@ -349,7 +372,7 @@ padding-bottom:80px;
     }
 
     #s3{
-        max-width: 500px;
+        max-width: 768px;
     }
    
     .diaman{

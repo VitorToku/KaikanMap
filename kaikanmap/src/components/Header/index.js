@@ -53,6 +53,7 @@ import Axios from 'axios'
 const Botao = styled.button` 
   padding: 15px 15px;
   background-color: #003785;
+  border-radius: 50px;
   border: none;
   color: #DCE6EA; 
   margin: 0 10px;
