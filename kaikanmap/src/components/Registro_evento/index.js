@@ -97,7 +97,7 @@ function Registro_evento() {
             Horário:
           </label>
           <input 
-          type='datetime-local' 
+          type='time' 
           className="input-text1"
           name='Hora'
           onChange={handleChangeValues} />
@@ -111,17 +111,17 @@ function Registro_evento() {
           cols={20} rows={6}
           name='Descricao'
           onChange={handleChangeValues} />
-        </div> 
-        <div className='contain-inputs'>          
-        <label className='label-text'>
+        </div>
+        <div className='contain-inputs'>
+          <label className='label-text'>
             Imagem:
           </label>
-          <input class="design" 
+          <input 
           type='file'
           name='imagem'
           onChange={handleChangeValues} />
         </div>
-        <button  className='button' onClick={handleClickButton}>
+        <button  className='aaa' onClick={handleClickButton}>
           ENVIAR
         </button>
       </div>

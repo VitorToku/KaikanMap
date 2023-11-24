@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from 'react';
+import ImgCalendario from '../../img/Calendar.png'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
@@ -106,10 +107,12 @@ function Calendario() {
             <CalendCima>
                 <h1>Calendario de Eventos</h1>        
                 {/* <Imagem src={ImgCalendario} /> */}
-            </CalendCima>            
+            </CalendCima>
+            <Filtro>Filtros</Filtro>
             <FundoLista className='overflow-auto'>                
                 <div>
-                    <ListaEventos>                        
+                    <ListaEventos>
+                        
                         {listaEventos?.map((evento)=>
                         (<li key={evento.id}>
                             <Link to= {`/evento/${evento.id}`} >                               
@@ -117,7 +120,7 @@ function Calendario() {
                                 <ElemEvento>{formatDate(evento.DiaEHora)}</ElemEvento>                                
                                 <ElemEvento>{evento.NomeEvento}</ElemEvento>
                                 <ElemEvento>{evento.LocalEvento}</ElemEvento>
-                            </Evento>                            
+                            </Evento>
                             </Link>
                         </li>)
                         )}

@@ -10,8 +10,9 @@ const db = mysql.createConnection({
     host:"localhost",
     user: "root",    
     database:"kaikanmap",
-    password:"testecrud1234"
+    password:""
 });
+
 
 app.get("/teste", (req, res) => {    
     const q = "SELECT * FROM listakaikans";
@@ -22,7 +23,7 @@ app.get("/teste", (req, res) => {
 });
 
 app.get("/listaKaikans",(req,res)=>{
-    const q = "select * from listakaikans;";
+    const q = "select id, Nomekaikan, DescricaoCompleta from listakaikans;";
     db.query(q,(err,result) =>{
         if (err) console.log(err)
         else res.send(result)
@@ -83,37 +84,16 @@ app.post("/registroEvento", (req,res) =>{
 app.post("/login",(req,res)=>{
     const {Email} = req.body;
     const {Senha} = req.body;
+    
+    console.log(Email)
+    console.log(Senha)
 
-    const q = "select Senha, NomeKaikan, id from listakaikans where Email = ?"
+    const q = "select Senha from listakaikans where Email = ?"
     db.query(q, [Email],(err,result)=>{   
-        if(result.length == 0){res.send({Sucesso: false, Message: "O email não está cadastrado"})}   
-        else if(result[0].Senha == Senha){res.send({Sucesso: true, NomeKaikan: result[0].NomeKaikan, id: result[0].id })}  
-        else{res.send({Sucesso: false, Message:'Senha incorreta'})}
+        if(result[0].Senha == Senha){res.send({Sucesso: true})}         
     })
-})
-
-app.get("/MeusEventos/:id",(req,res) =>{   
-    const q = `select * from eventos where KaikanResponsavel = ${req.params.id}`
-    db.query(q,(err,result)=>{
-        if (err) console.log(err)
-        else {
-            res.send(result) 
-}
-    })
-    
-})
-
-app.get("/kaikan/:idKaikan",(req,res) =>{   
-    const q = `select * from listakaikans where id = ${req.params.idKaikan}`
-    db.query(q,(err,result)=>{
-        if (err) console.log(err)
-        else {
-            res.send(result) 
-}
-    })
-    
 })
 
 app.listen(3001, () =>{
     console.log("Rodando Servidor")
-}); 
+});
