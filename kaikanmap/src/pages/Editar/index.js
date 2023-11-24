@@ -1,18 +1,16 @@
-
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import Lista from '../../components/Lista-Kaikans'
+import Editar from '../../components/Editar'
 
 
-function ListaKaikan(props){
+function EditarPg(props){
     return(
         <>
         <Header/>
-        <Lista/>
-
+        <Editar/>
         <Footer/>
         </>
     )
 }
 
-export default ListaKaikan;
+export default EditarPg;
