@@ -1,5 +1,4 @@
 import React,{useEffect, useState} from 'react';
-import ImgCalendario from '../../img/Calendar.png'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import Axios from 'axios';

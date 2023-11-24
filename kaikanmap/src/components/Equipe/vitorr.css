@@ -21,8 +21,8 @@
 
   main{
     background-color: #DCE6EA;
-    padding-top: 1rem;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-left: 8rem;
   }
 
 
@@ -57,10 +57,7 @@
   }
  
 
-  #c1, #c2, #c3{
-    border-radius: 15%;
-    justify-self: center;
-  }
+ 
 #c1{
     grid-area: c1;
     background-color:#DCE6EA;
@@ -79,28 +76,54 @@
     width: 100%;
     height: 500px;    
 }
+
+#c1, #c2, #c3{
+  border-radius: 15%;
+  padding-left: 90px;
+  padding-top: 40px;
+}
 #tit{
     color:#003785;
     font-size: 56px;
 }
 
+.img{
+  padding-left: 40px;
+}
+
 .vit{
 
-  width: 260px;
+  width: 220px;
   border-radius: 100%;
 }
   
 .gab{
-  width: 260px;
+  width: 220px;
   border-radius: 100%;
 
 }
 
 .jam{
-  width: 260px;
-  height: 300px;
+  width: 220px;
+  height: 260px;
   border-radius: 100%;
 
+}
+
+.superhr{
+  width:260px;
+  border-top: 3px solid #2196F3;
+  position: relative;
+  left: 10px;
+  
+}
+
+.nomepro{
+  font-size: 20px;
+}
+
+.nomee{
+  padding-right: 100px;
 }
 
 
@@ -209,8 +232,75 @@ padding-bottom:80px;
   #font{
     font-size: 12px;
   }
+@media(max-width:1445px)
+{
+  main{
+    max-width: 1440px;
+    padding-left: 4rem;
+  }
+  .img{
+      
+  }
+  
+  .vit{
+    position: relative;
+    right: 60px;
+  }
+    
+  .gab{
+    
+    position: relative;
+    right: 60px;
+  
+  }
+  
+  .jam{
+    position: relative;
+    right: 60px;
+  
+  }
 
-@media(max-width:1167px)
+  .superhr{
+    width: 0px;
+  
+  }
+
+  
+  
+
+
+
+
+
+  #s3{
+    max-width: 1440px;
+
+  }
+}
+@media(max-width:1360px){
+  main{
+    max-width: 1136px;
+  }
+
+ #c1, #c2, #c3{
+  transform: scale(0.7);
+ }
+
+ 
+ 
+  #s3{
+    max-width: 1172px;
+
+  }
+
+
+  #s2{
+    grid-template-areas: "c1  c2"
+                          "c3 c3 ";
+  }
+}
+
+@media(max-width:1172px)
 {
     
  
@@ -255,6 +345,7 @@ padding-bottom:80px;
 @media(max-width:768px){
     main{
         max-width:768px;
+        padding-right: 2rem;
     }
 
     #s3{
@@ -294,15 +385,57 @@ padding-bottom:80px;
       position: relative;
       left: 20px;
     }
+    
+    .img{
+      
+    }
+    
+    .vit{
+      transform: scale(0.7);
+      position: relative;
+      right: 110px;
+    }
+      
+    .gab{
+      transform: scale(0.7);
+      position: relative;
+      right: 110px;
+    
+    }
+    
+    .jam{
+      transform: scale(0.7);
+      position: relative;
+      right: 110px;
+    
+    }
+
+    .superhr{
+      
+      border-top: 0px ;
+      
+      
+    }
+
+    .nomee{
+      position: relative;
+      right: 33px;
+    }
+    
+    .nomepro{
+      font-size: 16px;
+    }
+
 
 }
 @media(max-width:375px){
   main{
       max-width:360px;
+      
   }
 
   #call{
-    font-size: 44px;
+    font-size: 36px;
   }
    
   #s2{
