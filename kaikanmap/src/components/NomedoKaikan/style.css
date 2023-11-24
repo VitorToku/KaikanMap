@@ -14,24 +14,26 @@
     background-color: white;
   }
   
-  .title {
+  .tituloKaikan {
     width: 90%;
-    padding-left: 50px;
-    margin-bottom: 5px;
-    margin-top: 50px;
+    font-size: 48px;
+    padding-left: 30px;    
+    margin-top: 32px;
+    margin-bottom: 0;
   }
   
   .description {
-    width: 90%;
-    padding-left: 50px;
+    width: 90%;    
     margin-bottom: 20px;
+    padding-left: 40px;
+    margin: 0;
     font-weight: 300;
   }
   
-  .contain {
+  .containar {
     padding: 40px 100px;
     width: 70%;
-    background-color: gray;    
+    background-color: rgb(103, 129, 134);    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,6 +41,7 @@
   
   .image {
     border-radius: 8px;
+    min-width: 500px;
   }
   
   .text {
@@ -48,7 +51,7 @@
   }
   
   @media (max-width:1100px) {
-    .contain {
+    .containar {
       padding: 20px 40px;
     }
   

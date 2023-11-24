@@ -40,7 +40,7 @@ const Descricao = styled.div`
 const ImgEvento = styled.img`
     display: flex;
     margin: 40px auto;
-    width: 90%;
+    min-width: 500px;    
 
     @media(max-width: 1024px){
         margin: 20px auto;
@@ -91,8 +91,8 @@ function DescEvento(){
                     <>
                         <Data>
                             <h1>{dadosEvento[0].NomeEvento}</h1>
-                            <h2>{dadosEvento[0].NomeKaikan} - {dadosEvento[0].LocalEvento}</h2>
-                            <p>{formatDate(dadosEvento[0].DiaEHora)} - {formatTime(dadosEvento[0].DiaEHora)} </p>
+                            <h2 className='descEvento'>{dadosEvento[0].NomeKaikan} - {dadosEvento[0].LocalEvento}</h2>
+                            <p className='descEvento'>{formatDate(dadosEvento[0].DiaEHora)} - {formatTime(dadosEvento[0].DiaEHora)} </p>
                         </Data>
                         <Descricao>
                             <ImgEvento src={dadosEvento[0].imagem} alt={dadosEvento[0].imgEvento}></ImgEvento> 

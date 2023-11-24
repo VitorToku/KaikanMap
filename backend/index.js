@@ -102,6 +102,18 @@ app.get("/MeusEventos/:id",(req,res) =>{
     })
     
 })
+
+app.get("/kaikan/:idKaikan",(req,res) =>{   
+    const q = `select * from listakaikans where id = ${req.params.idKaikan}`
+    db.query(q,(err,result)=>{
+        if (err) console.log(err)
+        else {
+            res.send(result) 
+}
+    })
+    
+})
+
 app.listen(3001, () =>{
     console.log("Rodando Servidor")
 }); 
