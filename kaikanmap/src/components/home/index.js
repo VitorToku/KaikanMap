@@ -29,8 +29,6 @@ margin-left:1rem;
 color:#0D33FC;
 font-weight:500;
 font-size:16px;
-
-
 `
 
 const Imp = styled.h3 `
