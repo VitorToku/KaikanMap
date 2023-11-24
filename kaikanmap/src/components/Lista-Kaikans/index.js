@@ -9,7 +9,7 @@ const Lista = styled.div`
     gap: 24px;
     padding: 0;
     flex-wrap: wrap;
-    padding: 16px 32px;
+    padding: 32px 32px;
     margin: 0 auto;    
 `
 const Card = styled.div`
@@ -124,7 +124,7 @@ function ListaDeKaikans(){
     
     
     return(        
-        <>
+        <div className="Fundo">
             <h1 className="Titulo">Lista de Kaikans</h1>   
             <Tudo>
                   
@@ -155,7 +155,7 @@ function ListaDeKaikans(){
                 </Lista>  
             </Tudo>
             
-        </>
+        </div>
     )
 }
 
