@@ -1,6 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
 import { Routes, Route } from 'react-router-dom';
 import Calendario from './pages/calendario';
 import Home from './pages/home';
@@ -11,6 +8,9 @@ import './style.css';
 import RegistroK from './pages/registro';
 import NomedoKaikan from './pages/NomedoKaikan';
 import Registro_evento from './pages/Registro_evento';
+import MeusEventos from './pages/MeusEventos'
+import EditarPg from './pages/Editar';
+
 import { createContext, useState } from 'react';
 
 
@@ -25,10 +25,11 @@ function App() {
         <Route path='calendario' element={<Calendario />} />        
         <Route path="/evento/:id" element={<Evento />} />
         <Route path="/registro" element={<RegistroK />} />
-        <Route path='/NomedoKaikan' element={<NomedoKaikan />}  />
-        <Route path='/RegistroEvento' element={<Registro_evento />}  />         
+        <Route path='/NomedoKaikan/:idKaikan' element={<NomedoKaikan />}  />
+        <Route path='/RegistroEvento' element={<Registro_evento />}  />   
+        <Route path='/MeusEventos' element={<MeusEventos/>} />  
+        <Route path='/editar/:idEvento' element={<EditarPg/>} />
       </Routes>
-
   );
 }
 

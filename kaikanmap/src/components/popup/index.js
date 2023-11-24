@@ -2,6 +2,7 @@ import React, { useState,useContext } from 'react';
 import styled from 'styled-components';
 import Axios from 'axios';
 import { EstaLogado } from '../../context/LogadoContext'
+import { useNavigate } from 'react-router-dom';
 
 export const PopupContainer = styled.div`
   display: ${props => (props.show ? 'block' : 'none')};
@@ -34,7 +35,7 @@ export const CloseButton = styled.button`
 `;
 
 const Popup = (props) => {
-  const {logado, logar, popupAberto, fecharPopup} = useContext(EstaLogado);
+  const {logado, logar, popupAberto, fecharPopup, usuario, defUsuario, defId} = useContext(EstaLogado);
   const[values,setValues] = useState();
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
@@ -43,18 +44,24 @@ const Popup = (props) => {
     }));
   };
   
-  const ValidarLogin = () =>{    
+  const ValidarLogin = () =>{        
       Axios.post("http://localhost:3001/login",{
         Email: values.Email,
         Senha: values.Senha,
       }).then((response)=>{
-        if(response.data.Sucesso){
+        if(response.data.Sucesso){          
           logar()
           fecharPopup()
+          defUsuario(response.data.NomeKaikan)
+          defId(response.data.id)
+          navigate("/MeusEventos")
+        }
+        else{
+          console.log(response.data.Message)
         }
       })
   }
-
+  const navigate = useNavigate()
   return (
     <PopupContainer show={popupAberto}>
         <PopupContent>
@@ -72,6 +79,7 @@ const Popup = (props) => {
           name='Senha'
           placeholder='Digite sua senha'
           onChange={handleChangeValues} />
+        <div>Senha errada</div>
           <CloseButton onClick={ValidarLogin}>Logar</CloseButton>
         </PopupContent>
       </PopupContainer>
