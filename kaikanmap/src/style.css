@@ -319,4 +319,10 @@ font-size: 20px;
     }
 }
 
-  
+.CarDesc{
+  color: #cbd3fc;
+}
+
+.FundoCarDesc{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}

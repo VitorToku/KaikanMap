@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components'
 import vitao from '../../img/vitao.png'
+import caligrafia from '../../img/caligrafia.jpg'
+import comida from '../../img/comida.jpg'
 import logo from '../../img/logo.png'
 import { Link } from "react-router-dom";
 
@@ -8,12 +10,14 @@ const Corpo = styled.div`
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
     grid-template-areas:
+                        "h  h "
                         "a  m "
                         "s1 s1";
 
     @media(max-width: 992px){
         grid-template-columns: 1fr;
         grid-template-areas:
+                        "h "
                         "a "
                         "m "
                         "s1";
@@ -53,7 +57,19 @@ const Carrossel = styled.div`
     padding: 50px;
     grid-area: m;
 `
-
+const Hero = styled.div`
+    grid-area: h;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/heroImg.jpg) ; 
+    height: 80vh;
+    background-size: conver;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    padding: 150px 0;
+`
 const Kaikan = styled.div`
     display:flex;
     flex-direction: row;
@@ -80,10 +96,25 @@ const Descricao = styled.div`
     max-width: 500px;     
 }
 `
+const TituloHero = styled.p`
+    color: #E8F8FF;
+    font-weight: 500;
+    font-size: 48px;
+    width: 90%;
+    text-align:center;
+`
+const SubTituloHero = styled.p`
+    color: #E8F8FF;
+    font-size: 24px;
+`
 
 function HomePage() {
     return (                 
             <Corpo>
+                <Hero>
+                    <TituloHero>Descubra  a Riqueza Cultural Japonesa</TituloHero>
+                    <SubTituloHero>Conheça KaikanMap, a sua bússola para uma jornada cultural única e autêntica</SubTituloHero>
+                </Hero>
                 <TextoCarrossel>
                     <BarraHorizontal />
                     <Titulo >PROXIMOS EVENTOS</Titulo>
@@ -100,13 +131,22 @@ function HomePage() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img src={vitao} className="d-block w-100" alt="..." />
+                                <img src={vitao} className="d-block h-100" alt="..." />
+                                <div class="carousel-caption d-none d-md-block FundoCarDesc">                                    
+                                    <p className='CarDesc'>Projeto Taiko</p>
+                                </div>
                             </div>
                             <div className="carousel-item">
-                                <img src={vitao} className="d-block w-100" alt="..." />
+                                <img src={caligrafia} className="d-block h-100" alt="..." />
+                                <div class="carousel-caption d-none d-md-block FundoCarDesc">                                    
+                                    <p className='CarDesc'>Aulas de Caligrafia</p>
+                                </div>
                             </div>
                             <div className="carousel-item">
-                                <img src={vitao} className="d-block w-100" alt="..." />
+                                <img src={comida} className="d-block h-100" alt="..." />
+                                <div class="carousel-caption d-none d-md-block FundoCarDesc">                                    
+                                    <p className='CarDesc'>Festival de Culinária</p>
+                                </div>
                             </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -25,8 +25,8 @@ const Cima = styled.div`
 
 function Footer(){
     return(
-        <Foot>             
-            <Baixo/>
+        <Foot>
+          <Baixo/>
         </Foot>
 
     )
