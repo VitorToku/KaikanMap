@@ -97,7 +97,7 @@ function Registro_evento() {
             Horário:
           </label>
           <input 
-          type='time' 
+          type='datetime-local' 
           className="input-text1"
           name='Hora'
           onChange={handleChangeValues} />

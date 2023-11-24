@@ -9,7 +9,6 @@ function ListaKaikan(props){
         <>
         <Header/>
         <Lista/>
-
         <Footer/>
         </>
     )
