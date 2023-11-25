@@ -58,11 +58,16 @@
   }
  
   .Perfil{
+    margin-right: 100px;
+    padding-right: 100px;
+    transform: scale(0.6);
     border-radius: 50%;
     padding: 16px;
   } 
   .text{
     width: 99%;
+    position: relative;
+    right: 45px;
   }
   .icon{
     font-size: 30px;
@@ -110,6 +115,12 @@
     color:#003785;
     font-size: 56px;
     
+}
+
+#social-media{
+  position: relative;
+  bottom: 80px;
+  right: 50px;
 }
 
 .img{

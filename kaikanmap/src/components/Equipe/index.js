@@ -19,27 +19,45 @@ function Equipe() {
                 <h3 id="fala">Nossa gestão de pessoas segue à risca o princípio de primor pelo ser humano e, por <br /> isso, trabalhamos com liberdade e responsabilidade, focando no desenvolvimento de <br /> cada colaborador.</h3>
             </main>
             <section id="s2">
-                <section id="c1" className="caixas">                    
-                    <img className='Perfil'src={vitor} />                    
+                <section id="c1" className="caixas">
+                    <img className='Perfil' src={vitor} />
                     <div class="text">Vitor Tokunaga, 23</div>
-                    <a className="linkIcon" target="_blank" href="https://github.com/VitorToku"><i class="bi bi-github icon"/></a>
-                    <a className="linkIcon" target="_blank" href="https://www.instagram.com/vhtoku/"><i class="bi bi-instagram icon"></i></a>
-                    <a className="linkIcon" target="_blank" href="https://www.linkedin.com/in/vitor-tokunaga-82b344278/"><i class="bi bi-linkedin icon"></i></a>
+
+
+                    <div id="social-media">
+                        <a className="linkIcon" target="_blank" href="https://github.com/VitorToku"><i class="bi bi-github icon" /></a>
+                        <a className="linkIcon" target="_blank" href="https://www.instagram.com/vhtoku/"><i class="bi bi-instagram icon"></i></a>
+                        <a className="linkIcon" target="_blank" href="https://www.linkedin.com/in/vitor-tokunaga-82b344278/"><i class="bi bi-linkedin icon"></i></a>
+                    </div>
+
                 </section>
-                <section id="c2" className="caixas">                    
-                    <img className='Perfil' src={gabriel} />                    
+                <section id="c2" className="caixas">
+                    <img className='Perfil' src={gabriel} />
                     <div class="text">Gabriel Coutinho, 18 </div>
 
-                    <a className="linkIcon" target="_blank" href="https://github.com/coutinhogit"><i class="bi bi-github icon"/></a>
-                    <a className="linkIcon" target="_blank" href="#"><i class="bi bi-instagram icon"></i></a>
-                    <a className="linkIcon" target="_blank" href="https://www.linkedin.com/in/gabriel-coutinho-cezar-b2b8821b7/"><i class="bi bi-linkedin icon"></i></a>
+
+
+                    <div id="social-media">
+                        <a className="linkIcon" target="_blank" href="https://github.com/coutinhogit"><i class="bi bi-github icon" /></a>
+                        <a className="linkIcon" target="_blank" href="#"><i class="bi bi-instagram icon"></i></a>
+                        <a className="linkIcon" target="_blank" href="https://www.linkedin.com/in/gabriel-coutinho-cezar-b2b8821b7/"><i class="bi bi-linkedin icon"></i></a>
+
+                    </div>
+
                 </section>
-                <section id="c3" className="caixas">                                       
-                    <img className='Perfil' src={jasmani} />                    
+                <section id="c3" className="caixas">
+                    <img className='Perfil' src={jasmani} />
                     <div class="text">Jasmani Rudy, 21 </div>
-                    <a className="linkIcon" target="_blank" href="https://github.com/110320011"><i class="bi bi-github icon"/></a>
-                    <a className="linkIcon" target="_blank" href="#"><i class="bi bi-instagram icon"></i></a>
-                    <a className="linkIcon" target="_blank" href="#"><i class="bi bi-linkedin icon"></i></a>
+
+                    <div id="social-media">
+                        <a className="linkIcon" target="_blank" href="https://github.com/110320011"><i class="bi bi-github icon" /></a>
+                        <a className="linkIcon" target="_blank" href="#"><i class="bi bi-instagram icon"></i></a>
+                        <a className="linkIcon" target="_blank" href="#"><i class="bi bi-linkedin icon"></i></a>
+
+                    </div>
+
+
+
                 </section>
             </section>
             <section id="s3">
