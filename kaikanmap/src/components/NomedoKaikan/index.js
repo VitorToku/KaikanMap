@@ -1,49 +1,18 @@
 import vitao from '../../img/vitao.png'
 import './style.css';
-import { useParams } from 'react-router-dom';
-import Axios from 'axios';
-import React,{useEffect, useState} from 'react';
 
 function NomedoKaikanComp(){
-  const { idKaikan } = useParams();
-  const[dadosKaikan,setDadosKaikan] = useState(null);
-
-  useEffect(()=>{
-    const fetchData = async () =>{
-        try{
-            const response = await Axios.get(`http://localhost:3001/kaikan/${idKaikan}`);
-            setDadosKaikan(response.data);
-        } catch(error){
-            console.error("Erro aos buscar dados: ", error)
-        }
-        
-    };        
-    fetchData();        
-    
-},[idKaikan]);
 
 return (
     <div className='container'>
-      
-      {dadosKaikan ? 
-                (
-                  <>
-                  <p class="tituloKaikan">{dadosKaikan[0].NomeKaikan}</p>
-                  <p class="description">{dadosKaikan[0].Cidade}, {dadosKaikan[0].Estado}</p>
-                  <div className='containar'>
-                    <img src={dadosKaikan[0].imagem} className='image' />
-                    <p class="text">
-                      {dadosKaikan[0].DescricaoCompleta}
-                      </p>
-                    <p>Endereço Completo:</p>
-                    <p>{dadosKaikan[0].Rua}, {dadosKaikan[0].Numero} - {dadosKaikan[0].Bairro}, {dadosKaikan[0].Cidade} - {dadosKaikan[0].Estadp}, {dadosKaikan[0].CEP}</p>
-                  </div>
-                  </>
-                ) : 
-                (
-                    <p>Carregando...</p>
-                )
-            }            
+      <p class="title">Nome do Kaikan</p>
+      <p class="description">Local</p>
+      <div className='contain'>
+        <img src={vitao} className='image' />
+        <p class="text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </p>
+      </div>
     </div>
   )
 }
