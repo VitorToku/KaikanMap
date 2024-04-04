@@ -8,7 +8,9 @@ app.use(express.json());
 
 const db = mysql.createConnection({
     host:"localhost",
-    user: "root",    
+    user: "root",   
+  
+
     database:"kaikanmap",
     password:""
 });
