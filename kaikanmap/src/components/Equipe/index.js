@@ -4,8 +4,8 @@ import diamante from '../../img/diamante.png'
 import objetivo from '../../img/objetivo.png'
 import fecapimg from '../../img/fecap.png'
 import vitor from '../../img/vitor.jpg'
-import gabriel from '../../img/gabriel2.jpg'
-import jasmani from '../../img/jasmani2.jpg'
+import gabriel from '../../img/gabriel.jpg'
+import jasmani from '../../img/jasmani.jpg'
 
 function Equipe() {
     return (
