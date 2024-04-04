@@ -15,7 +15,6 @@
 ## Descrição
 
 <p align="center">
-<img src="https://github.com/2023-1-MCC1/Projeto5/blob/main/imagens/TelaDeJogo.png?raw=true" alt="NOME DO JOGO" border="0">
 
 O site KaikanMap foi feito para o projeto do 2º semestre de Ciência da Computação <br>
 Para explicar a idéia, primeiro precisamos entender o que é Kaikan. Kaikan é uma associação cultural japonesa, criada com o intuito de reunir japoneses e seus descendentes, para promover atividades sociais e culturais, mantendo viva a cultura. <br>
