@@ -58,16 +58,28 @@
   }
  
   .Perfil{
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 16px;
+    padding-right: 100px;
+    transform: scale(0.7);
   } 
+
   .text{
     width: 99%;
+    position: relative;
+    bottom: 80px;
+  padding-right:  85px;
   }
   .icon{
     font-size: 30px;
     margin: 0 10px;
   }
+
+ #prede{
+  position: relative;
+  bottom: 70px;
+  right: 35px;
+ }
 
 .linkIcon{
   transition: transform 0.3s ease-in-out;
@@ -103,8 +115,9 @@
 
 #c1, #c2, #c3{
   border-radius: 15%;
-  padding-left: 90px;
+  padding-left: 60px;
   padding-top: 40px;
+  padding-bottom: 100px;
 }
 #tit{
     color:#003785;
@@ -300,9 +313,9 @@ padding-bottom:80px;
 
   }
 }
-@media(max-width:1360px){
+@media(max-width:1366px){
   main{
-    max-width: 1136px;
+    max-width: 1366px;
   }
 
  #c1, #c2, #c3{
@@ -312,7 +325,7 @@ padding-bottom:80px;
  
  
   #s3{
-    max-width: 1172px;
+    max-width: 1336px;
 
   }
 
@@ -468,7 +481,7 @@ padding-bottom:80px;
   #c1, #c2, #c3{
     width: 250px;
     position: relative;
-    right: 50px;
+    right: 80px;
   }
   #s3{
       margin-right: 50px;
