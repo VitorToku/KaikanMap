@@ -1,7 +1,7 @@
 import Logo from '../../img/logo.svg'
 
 import styled, { ThemeConsumer, ThemeContext } from 'styled-components'
-import {Link, useNavigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {useState,useContext } from 'react'
 import { EstaLogado } from '../../context/LogadoContext'
 import Popup, {CloseButton, PopupContent, PopupContainer} from '../../components/popup';
@@ -53,7 +53,6 @@ import Axios from 'axios'
 const Botao = styled.button` 
   padding: 15px 15px;
   background-color: #003785;
-  border-radius: 50px;
   border: none;
   color: #DCE6EA; 
   margin: 0 10px;
@@ -76,15 +75,11 @@ const Barra = styled.div`
 `
 
 function Header(props){  
+    const {logado, logar,popupAberto, abrirPopup} = useContext(EstaLogado);
     
-    const {logado, logar,popupAberto, abrirPopup,usuario} = useContext(EstaLogado);
     const [aparecePopup, setAparecePopup] = useState(false);
-    const navigate = useNavigate()
-    const deslogar =()=>{
-      logar()
-      navigate('/')
-    }
-    
+
+
     return(            
     <>      
       <nav className="navbar navbar-expand-lg minhacor">
@@ -110,15 +105,14 @@ function Header(props){
 
             {logado ? (
               <>
-                <Botao onClick={deslogar}>Deslogar</Botao>                
-                <Link to = "/RegistroEvento"><Botao>Registre Seu Evento</Botao> </Link>  
-                <div>{usuario}</div>
+                <Botao onClick={abrirPopup}>LOGIN</Botao>
+                <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>  
               </>
             ) : (
                 <>
-                <Botao onClick={abrirPopup}>LOGIN</Botao>
-                <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link> 
-                </>                
+                <Botao onClick={logar}>Deslogar</Botao>
+                <Link to = "/registro"><Botao>REGISTRE-SE</Botao> </Link>  
+                </>
             )    
             }
           </div>

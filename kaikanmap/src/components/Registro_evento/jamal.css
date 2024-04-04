@@ -47,47 +47,80 @@
   background-color: #DCE6EA;
   padding: 12px 10px;
   border-radius: 6px;
-  width: 100%;
-  
-}
-
-
-  .input-text1{
-    background-color: #DCE6EA;
-    padding: 12px 10px;
-    border-radius: 6px;
-    width: 40%;
-    font-size: 20px;
+  width: 100%;    
   }
 
+  
+  .container {
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .title {
+    width: 90%;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .contain{
+    padding: 40px 100px;
+    width: 90%;
+    background-color: gray;
+    border-radius: 6px;
+  }
+  
+  .contain-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .label-text {
+    color: black;
+  }
+  
+  .input-text {
+    background-color: #DCE6EA;
+    padding: 12px 250px;
+    border-radius: 6px;                               
+  }
 
+  .input-text1{
+
+    display: flex;
+    flex-direction: row;
+    background-color: #DCE6EA;
+    padding: 12px 20px;
+    border-radius: 6px; 
+
+  }
+  
   .input-textarea {
     background-color: #DCE6EA;
-    padding: 12px 10px;
+    padding: 40px 250px;
     border-radius: 6px;
     resize: none;
   }
-
-  .button {
-    background-color: #003785;
+  
+  .aaa {
+    background-color: white;
     display: flex;
     justify-content: center;
-    width: 10%;
+    width: 100%;
     padding: 12px 6px;
     border-radius: 6px;
     font-weight: 600;
-    margin-left: 45%;
-    color: white;
-    margin-top: 70px;
-
+    color: black;
   }
-
-  @media (max-width: 992px) {
+  
+  @media (max-width: 720px) {
     .contain {
       padding: 20px 40px;
     }
-  }
-
-.design{
-  background-color: #D9D9D9;
-}
+  } 
